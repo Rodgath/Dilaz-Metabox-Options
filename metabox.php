@@ -6,7 +6,7 @@
 ||
 || @package		Dilaz Metabox
 || @subpackage	Metabox
-|| @version		2.1
+|| @version		2.0
 || @since		Dilaz Metabox 1.0
 || @author		WebDilaz Team, http://webdilaz.com
 || @copyright	Copyright (C) 2017, WebDilaz LTD
@@ -22,8 +22,8 @@ defined('ABSPATH') || exit;
 $parameters = array(
 	'prefix'          => 'my_prefix', # must be unique. Used to save settings.
 	'use_type'        => 'theme',     # 'theme' if used within a theme OR 'plugin' if used within a plugin
-	'default_options' => true,       # whether to load default options
-	'custom_options'  => true,       # whether to load custom options
+	'default_options' => true,        # whether to load default options
+	'custom_options'  => true,        # whether to load custom options
 );
 
 # Load metabox options

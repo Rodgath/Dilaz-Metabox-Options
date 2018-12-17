@@ -251,35 +251,6 @@ $dilaz_meta_boxes[] = array(
 			'std'    => 'placeholder',
 			'args'   => array('size' => '40'),
 		);
-		$dilaz_meta_boxes[] = array(
-			'id'	  => $prefix .'multi_text_inline',
-			'name'	  => __('Multiple Text (Inline 3 Columns):', 'dilaz-metabox'),
-			'desc'	  => __('Set any number of multiple text field options.', 'dilaz-metabox'),
-			'desc2'	  => __('Description 2.', 'dilaz-metabox'),
-			'type'	  => 'multitext',
-			'options' => array(
-				'text1' => array('name' => __('Text 1', 'dilaz-metabox'), 'default' => 'Sample One'),
-				'text2' => array('name' => __('Text 2', 'dilaz-metabox'), 'default' => 'Sample Two'),
-				'text3' => array('name' => __('Text 3', 'dilaz-metabox'), 'default' => 'Sample Three'),
-				'text4' => array('name' => __('Text 4', 'dilaz-metabox'), 'default' => 'Sample Four'),
-				'text5' => array('name' => __('Text 5', 'dilaz-metabox'), 'default' => 'Sample Five'),
-				'text6' => array('name' => __('Text 6', 'dilaz-metabox'), 'default' => 'Sample Six'),
-			),
-			'args' => array('inline' => true, 'cols' => 3),
-		);
-		$dilaz_meta_boxes[] = array(
-			'id'	  => $prefix .'multi_text',
-			'name'	  => __('Multiple Text (Single Column):', 'dilaz-metabox'),
-			'desc'	  => __('Set any number of multiple text field options.', 'dilaz-metabox'),
-			'desc2'	  => __('Description 2.', 'dilaz-metabox'),
-			'type'	  => 'multitext',
-			'options' => array(
-				'text1' => array('name' => __('Text 1', 'dilaz-metabox'), 'default' => 'Sample One'),
-				'text2' => array('name' => __('Text 2', 'dilaz-metabox'), 'default' => 'Sample Two'),
-				'text3' => array('name' => __('Text 3', 'dilaz-metabox'), 'default' => 'Sample Three')
-			),
-			'args' => array(),
-		);
 	
 	# TAB - Media Options Set
 	# *****************************************************************************************
@@ -520,7 +491,7 @@ $dilaz_meta_boxes[] = array(
 				'color2' => array('color' => '#333333', 'name' => __('Color 2', 'dilaz-metabox')),
 				'color3' => array('color' => '#555555', 'name' => __('Color 3', 'dilaz-metabox')),
 				'color4' => array('color' => '#777777', 'name' => __('Color 4', 'dilaz-metabox')),
-				'color5' => array('color' => '#999999', 'name' => __('Color 5', 'dilaz-metabox')),
+				'color5' => array('color' => '#999999', 'name' => __('Color 4', 'dilaz-metabox')),
 			),
 		);
 		$dilaz_meta_boxes[] = array(

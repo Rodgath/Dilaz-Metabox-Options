@@ -17,17 +17,17 @@
 defined('ABSPATH') || exit;
 
 $use_type_parameters = array();
-$parameters['use_type_error'] = false;
 
 if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	
 	# check if its plugin when in theme use type
 	if (strpos(dirname(__FILE__), 'plugins')) {
 		
-		add_action('admin_notices', function() {
-			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Wrong use-type for metabox options. Please set "<em>use_type</em>" parameter to "<em>plugin</em>" in "<em>%s</em>".', 'dilaz-metabox' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/metabox.php' ) .'</strong></p></div>';
+		add_action( 'admin_notices', function() {
+			echo '<div id="message" class="error"><p><strong>'. __( 'Options panel is being used in a plugin. Please set "<em>use_type</em>" parameter to "<em>plugin</em>".', 'dilaz-metabox' ) .'</strong></p></div>';
 		});
 		
+		# set use type error
 		$parameters['use_type_error'] = true;
 		
 	} else {
@@ -42,8 +42,6 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 			'item_version' => $theme_version,
 			'dir_url'      => trailingslashit(get_template_directory_uri() . wp_normalize_path(explode($theme_name_lc, explode('includes', dirname(__FILE__))[0])[2])),
 		);
-		
-		update_option('dilaz_'.$parameters['use_type'].'_'.$theme_name.'_prefix', $prefix);
 	}
 
 } else if (isset($parameters['use_type']) && $parameters['use_type'] == 'plugin') {
@@ -51,10 +49,11 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	# check if its theme when in plugin use type
 	if (strpos(dirname(__FILE__), 'themes')) {
 		
-		add_action('admin_notices', function() {
-			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Wrong use-type for metabox options. Please set "<em>use_type</em>" parameter to "<em>theme</em>" in "<em>%s</em>".', 'dilaz-metabox' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/metabox.php' ) .'</strong></p></div>';
+		add_action( 'admin_notices', function() {
+			echo '<div id="message" class="error"><p><strong>'. __( 'Options panel is being used in a theme. Please set "<em>use_type</em>" parameter to "<em>theme</em>".', 'dilaz-metabox' ) .'</strong></p></div>';
 		});
 		
+		# set use type error
 		$parameters['use_type_error'] = true;
 		
 	} else {
@@ -83,8 +82,6 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 			'item_version' => $plugin_version,
 			'dir_url'      => trailingslashit(explode($plugin_name_lc, plugin_dir_url(__FILE__))[0] . $plugin_name_lc .'/'. $dilaz_mb_folder),
 		);
-		
-		update_option('dilaz_'.$parameters['use_type'].'_'.$plugin_name.'_prefix', $prefix);
 	}
 }
 

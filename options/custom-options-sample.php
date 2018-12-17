@@ -26,9 +26,8 @@ defined('ABSPATH') || exit;
 /**
  * Add custom metaboxes into dilaz metaboxes
  *
- * @param array	 $dilaz_metaboxes all registered dilaz metaboxes
- * @param string $prefix          metabox prefix
- * @param array  $parameters      metabox parameters
+ * @param array	$dilaz_metaboxes all registered dilaz metaboxes
+ * @param array	$prefix          metabox prefix
  *
  * @return array
  */
@@ -89,9 +88,8 @@ add_filter('metabox_option_filter_'. $prefix, function($dilaz_meta_boxes, $prefi
 /**
  * Insert metabox field before a specific field
  *
- * @param array	 $dilaz_metaboxes all registered dilaz metaboxes
- * @param string $prefix          metabox prefix
- * @param array  $parameters      metabox parameters
+ * @param array	$dilaz_metaboxes all registered dilaz metaboxes
+ * @param array	$prefix          metabox prefix
  *
  * @return array
  */
