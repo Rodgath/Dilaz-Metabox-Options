@@ -26,12 +26,12 @@ defined('ABSPATH') || exit;
 /**
  * Add custom metaboxes into dilaz metaboxes
  *
- * @param array	$dilaz_metaboxes all registered dilaz metaboxes
- * @param array	$prefix          metabox prefix
+ * @param array	 $dilaz_metaboxes all registered dilaz metaboxes
+ * @param string $prefix          metabox prefix
+ * @param array  $parameters      metabox parameters
  *
  * @return array
  */
-// add_filter('dilaz_meta_box_filter', function($dilaz_meta_boxes, $prefix, $parameters) {
 add_filter('metabox_option_filter_'. $prefix, function($dilaz_meta_boxes, $prefix, $parameters) {
 	
 	# BOX - Test Beta
@@ -89,12 +89,12 @@ add_filter('metabox_option_filter_'. $prefix, function($dilaz_meta_boxes, $prefi
 /**
  * Insert metabox field before a specific field
  *
- * @param array	$dilaz_metaboxes all registered dilaz metaboxes
- * @param array	$prefix          metabox prefix
+ * @param array	 $dilaz_metaboxes all registered dilaz metaboxes
+ * @param string $prefix          metabox prefix
+ * @param array  $parameters      metabox parameters
  *
  * @return array
  */
-// add_filter('dilaz_meta_box_filter', function($dilaz_meta_boxes, $prefix, $parameters) {
 add_filter('metabox_option_filter_'. $prefix, function($dilaz_meta_boxes, $prefix, $parameters) {
 	
 	# array data to be inserted
@@ -118,8 +118,8 @@ add_filter('metabox_option_filter_'. $prefix, function($dilaz_meta_boxes, $prefi
 		'std'     => 'yes'
 	);
 	
-	$new = DilazMetaboxFunction::insert_field($dilaz_meta_boxes,  $prefix .'custom_options_imp',  $prefix .'custom_3', $insert_custom_data, 'before');
+	$insert = DilazMetaboxFunction::insert_field($dilaz_meta_boxes,  $prefix .'custom_options_imp',  $prefix .'custom_3', $insert_custom_data, 'before');
 	
-	return ($new != false) ? array_merge($dilaz_meta_boxes, $new) : $dilaz_meta_boxes;
+	return ($insert != false) ? array_merge($dilaz_meta_boxes, $insert) : $dilaz_meta_boxes;
 	
 }, 10, 3);
