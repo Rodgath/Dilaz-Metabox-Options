@@ -34,9 +34,9 @@ $options_file    = file_exists($dilaz_mb_options .'options.php') ? $dilaz_mb_opt
 
 # Includes
 if ($user_type_file != '') require_once $user_type_file;
-if (isset($parameters['default_options']) && $parameters['default_options'] == true && $default_options != '') require_once $default_options;
-if (isset($parameters['custom_options']) && $parameters['custom_options'] == true) require_once $custom_options;
-require_once $options_file;
+if (isset($parameters['default_options']) && $parameters['default_options'] && $default_options != '' && !$parameters['use_type_error']) require_once $default_options;
+if (isset($parameters['custom_options']) && $parameters['custom_options'] && !$parameters['use_type_error']) require_once $custom_options;
+if (!$parameters['use_type_error']) require_once $options_file;
 
 # All metabox parameters
 $parameters = apply_filters('metabox_parameter_filter_'. $prefix, $parameters);
@@ -48,4 +48,4 @@ $dilaz_meta_boxes = apply_filters('metabox_option_filter_'. $prefix, $dilaz_meta
 $metabox_args = array($parameters, $dilaz_meta_boxes);
 
 # Initialize the panel object
-$dilazMetabox = new DilazMetabox($metabox_args);
+if (!$parameters['use_type_error']) new DilazMetabox($metabox_args);
