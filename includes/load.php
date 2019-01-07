@@ -16,6 +16,21 @@
 
 defined('ABSPATH') || exit;
 
+# Check if DilazMetabox plugin is installed/activated
+require_once(ABSPATH . 'wp-admin/includes/plugin.php');
+if (!is_plugin_active('dilaz-metabox/dilaz-metabox.php')) {
+	add_action('admin_notices', function() {
+		$plugins = get_plugins();
+		if (isset($plugins['dilaz-metabox/dilaz-metabox.php'])) {
+			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Please activate <em>Dilaz Metabox</em> plugin. It is required in "<em>%s</em>".', 'dilaz-metabox' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/metabox.php' ) .'</strong></p></div>';
+		} else {
+			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Please install <em>Dilaz Metabox</em> plugin. It is required in "<em>%s</em>".', 'dilaz-metabox' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/metabox.php' ) .'</strong></p></div>';
+		}
+	});
+	
+	return;
+}
+
 # Metabox options
 $dilaz_meta_boxes = array();
 $prefix = DilazMetaboxFunction::preparePrefix($parameters['prefix']);
