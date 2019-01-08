@@ -281,6 +281,169 @@ $dilaz_meta_boxes[] = array(
 			'args' => array(),
 		);
 	
+	# TAB - Repeatable Options Set
+	# *****************************************************************************************
+	$dilaz_meta_boxes[] = array(
+		'id'    => $prefix .'repeatable_fields',
+		'title' => __('Repeatable Options', 'dilaz-metabox'),
+		'icon'  => 'fa-align-justify',
+		'type'  => 'metabox_tab'
+	);
+		$dilaz_meta_boxes[] = array(
+			'id'   => $prefix .'repeatable_one',
+			'name' => __('Repeatable (Single Field per Row):', 'dilaz-metabox'),
+			'desc' => __('Single row items repeatable field. ', 'dilaz-metabox'),
+			'type' => 'repeatable',
+			'args' => array(
+				'sortable' => true,
+				'removable' => true,
+				'add_more' => true,
+				'add_text' => __('Add More', 'dilaz-metabox'),
+			),
+			'options' => array(
+				array(
+					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+				)
+			),
+		);
+		$dilaz_meta_boxes[] = array(
+			'id'   => $prefix .'repeatable_two',
+			'name' => __('Repeatable (Multiple Fields per Row):', 'dilaz-metabox'),
+			'desc' => __('Multiple row items repeatable field. You can add any number item fields per row.', 'dilaz-metabox'),
+			'type' => 'repeatable',
+			'args' => array(
+				'sortable' => true,
+				'removable' => true,
+				'add_more' => true,
+				'add_text' => __('Add More Custom', 'dilaz-metabox'),
+			),
+			'options' => array(
+				array(
+					array('label' => 'Label One', 'value' => 'Row 1 - Value 1', 'size' => 15), 
+					array('label' => 'Label Two', 'value' => 'Row 1 - Value 2', 'size' => 15), 
+					array('label' => 'Label Three', 'value' => 'Row 1 - Value 3', 'size' => 15), 
+					array('label' => 'Label Four', 'value' => 'Row 1 - Value 4', 'size' => 15), 
+				),
+				array(
+					array('label' => 'Label One', 'value' => 'Row 2 - Value 1', 'size' => 15), 
+					array('label' => 'Label Two', 'value' => 'Row 2 - Value 2', 'size' => 15), 
+					array('label' => 'Label Three', 'value' => 'Row 2 - Value 3', 'size' => 15), 
+					array('label' => 'Label Four', 'value' => 'Row 2 - Value 4', 'size' => 15), 
+				)
+			),
+		);
+		$dilaz_meta_boxes[] = array(
+			'id'   => $prefix .'repeatable_three',
+			'name' => __('Repeatable (Add More Field Disabled):', 'dilaz-metabox'),
+			'desc' => __('Add more button is disabled.', 'dilaz-metabox'),
+			'type' => 'repeatable',
+			'args' => array(
+				'sortable' => true,
+				'removable' => true,
+				'add_more' => false,
+			),
+			'options' => array(
+				array(
+					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+				)
+			),
+		);
+		$dilaz_meta_boxes[] = array(
+			'id'   => $prefix .'repeatable_four',
+			'name' => __('Repeatable (Sorting Disabled):', 'dilaz-metabox'),
+			'desc' => __('Field sorting is disabled.', 'dilaz-metabox'),
+			'type' => 'repeatable',
+			'args' => array(
+				'sortable' => false,
+				'removable' => true,
+				'add_more' => true,
+			),
+			'options' => array(
+				array(
+					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+				)
+			),
+		);
+		$dilaz_meta_boxes[] = array(
+			'id'   => $prefix .'repeatable_five',
+			'name' => __('Repeatable (Sorting Disabled for First 2 Fields):', 'dilaz-metabox'),
+			'desc' => __('Field sorting is disabled for the first 2 items.', 'dilaz-metabox'),
+			'type' => 'repeatable',
+			'args' => array(
+				'sortable' => true,
+				'not_sortable' => 2,
+				'add_more' => true,
+			),
+			'options' => array(
+				array(
+					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+				)
+			),
+		);
+		$dilaz_meta_boxes[] = array(
+			'id'   => $prefix .'repeatable_six',
+			'name' => __('Repeatable (Removal Disabled):', 'dilaz-metabox'),
+			'desc' => __('Field removal is disabled.', 'dilaz-metabox'),
+			'type' => 'repeatable',
+			'args' => array(
+				'removable' => false,
+				'add_more' => true,
+			),
+			'options' => array(
+				array(
+					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+				)
+			),
+		);
+		$dilaz_meta_boxes[] = array(
+			'id'   => $prefix .'repeatable_seven',
+			'name' => __('Repeatable (Removal Disabled for First Field):', 'dilaz-metabox'),
+			'desc' => __('Field removal is disabled for the first item.', 'dilaz-metabox'),
+			'type' => 'repeatable',
+			'args' => array(
+				'not_removable' => 1,
+				'add_more' => true,
+			),
+			'options' => array(
+				array(
+					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+				)
+			),
+		);
+	
 	# TAB - Media Options Set
 	# *****************************************************************************************
 	$dilaz_meta_boxes[] = array(
