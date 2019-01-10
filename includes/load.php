@@ -53,6 +53,9 @@ if (isset($parameters['default_options']) && $parameters['default_options'] && $
 if (isset($parameters['custom_options']) && $parameters['custom_options'] && !$parameters['use_type_error']) require_once $custom_options;
 if (!$parameters['use_type_error']) require_once $options_file;
 
+# Add files to parameters
+$parameters['files'] = [$default_options, $custom_options, $options_file];
+
 # All metabox parameters
 $parameters = apply_filters('metabox_parameter_filter_'. $prefix, $parameters);
 

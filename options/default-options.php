@@ -217,6 +217,16 @@ $dilaz_meta_boxes[] = array(
 			Each time you visit the Site or provide us with information, by doing so you are accepting the practices described in this privacy policy at that time.',
 		);
 		$dilaz_meta_boxes[] = array(
+			'id'    => $prefix .'codeoutput',
+			'name'  => __('Code Output', 'dilaz-metabox'),
+			'desc'  => __('Description 1.', 'dilaz-metabox'),
+			'desc2' => __('Description 2.', 'dilaz-metabox'),
+			'type'  => 'codeoutput',
+			'value' => '<?php if (function_exists("json_encode")) {
+				json_encode($result);
+			} ?>',
+		);
+		$dilaz_meta_boxes[] = array(
 			'id'    => $prefix .'hidden',
 			'type'  => 'hidden',
 			'value' => 'hidden',

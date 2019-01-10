@@ -81,7 +81,7 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 		$use_type_parameters = array(
 			'item_name'    => $plugin_name,
 			'item_version' => $plugin_version,
-			'dir_url'      => trailingslashit(explode($plugin_name_lc, plugin_dir_url(__FILE__))[0] . $plugin_name_lc .'/'. $dilaz_mb_folder),
+			'dir_url'      => trailingslashit(explode($plugin_name_lc, plugin_dir_url(__FILE__))[0] . $plugin_folder .'/'. $dilaz_mb_folder),
 		);
 		
 		update_option('dilaz_'.$parameters['use_type'].'_'.$plugin_name.'_prefix', $prefix);
