@@ -315,7 +315,7 @@ $dilaz_meta_boxes[] = array(
 					array('label' => '', 'value' => 'Row 1 - Value 1'), 
 				),
 				array(
-					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+					array('label' => '', 'value' => 'Row 2 - Value 2'), 
 				)
 			),
 		);
