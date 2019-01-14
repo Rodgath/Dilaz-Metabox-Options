@@ -83,6 +83,9 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 		# use global to check plugin data from all PHP files within plugin main folder
 		foreach (glob(trailingslashit($plugins_dir . $plugin_folder) . '*.php') as $file) {
 			$plugin_data = get_plugin_data($file);
+			
+			# lets ensure we don't return empty plugin data
+			if (empty($plugin_data['Name'])) continue; else break;
 		}
 		
 		$plugin_name    = $plugin_data['Name'];
