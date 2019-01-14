@@ -12,6 +12,10 @@
 || @link		http://webdilaz.com/metaboxes
 || @license		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 || 
+|| NOTE: Rename this file from "config-sample.php" to "config.php". If you
+||       don't rename it, all your config and settings will be overwritten
+||       when updating Dilaz Metabox Options.
+|| 
 */
 defined('ABSPATH') || exit;
 

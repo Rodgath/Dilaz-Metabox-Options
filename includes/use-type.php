@@ -25,7 +25,7 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	if (strpos(dirname(__FILE__), '\plugins\\') !== false) {
 		
 		add_action('admin_notices', function() {
-			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Wrong use-type for metabox options. Please set "<em>use_type</em>" parameter to "<em>plugin</em>" in "<em>%s</em>".', 'dilaz-metabox' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/metabox.php' ) .'</strong></p></div>';
+			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Wrong use-type for metabox options. Please set "<em>use_type</em>" parameter to "<em>plugin</em>" in "<em>%s</em>".', 'dilaz-metabox' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
 		});
 		
 		$parameters['use_type_error'] = true;
@@ -63,7 +63,7 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	if (strpos(dirname(__FILE__), 'themes')) {
 		
 		add_action('admin_notices', function() {
-			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Wrong use-type for metabox options. Please set "<em>use_type</em>" parameter to "<em>theme</em>" in "<em>%s</em>".', 'dilaz-metabox' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/metabox.php' ) .'</strong></p></div>';
+			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Wrong use-type for metabox options. Please set "<em>use_type</em>" parameter to "<em>theme</em>" in "<em>%s</em>".', 'dilaz-metabox' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
 		});
 		
 		$parameters['use_type_error'] = true;

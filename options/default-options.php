@@ -434,11 +434,11 @@ $dilaz_meta_boxes[] = array(
 		);
 		$dilaz_meta_boxes[] = array(
 			'id'   => $prefix .'repeatable_seven',
-			'name' => __('Repeatable (Removal Disabled for First Field):', 'dilaz-metabox'),
-			'desc' => __('Field removal is disabled for the first item.', 'dilaz-metabox'),
+			'name' => __('Repeatable (Removal Disabled for the 1st and 2nd Fields):', 'dilaz-metabox'),
+			'desc' => __('Field removal is disabled for the 1st and 2nd items.', 'dilaz-metabox'),
 			'type' => 'repeatable',
 			'args' => array(
-				'not_removable' => 1,
+				'not_removable' => 2,
 				'add_more' => true,
 			),
 			'options' => array(

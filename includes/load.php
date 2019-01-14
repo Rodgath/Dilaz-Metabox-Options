@@ -22,13 +22,18 @@ if (!is_plugin_active('dilaz-metabox/dilaz-metabox.php')) {
 	add_action('admin_notices', function() {
 		$plugins = get_plugins();
 		if (isset($plugins['dilaz-metabox/dilaz-metabox.php'])) {
-			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Please activate <em>Dilaz Metabox</em> plugin. It is required in "<em>%s</em>".', 'dilaz-metabox' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/metabox.php' ) .'</strong></p></div>';
+			echo '<div id="message" class="notice notice-warning"><p><strong>'. sprintf(__('Please activate <em>Dilaz Metabox</em> plugin. It is required in "<em>%s</em>".', 'dilaz-metabox'), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/metabox.php') .'</strong></p></div>';
 		} else {
-			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Please install <em>Dilaz Metabox</em> plugin. It is required in "<em>%s</em>".', 'dilaz-metabox' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/metabox.php' ) .'</strong></p></div>';
+			echo '<div id="message" class="notice notice-warning"><p><strong>'. sprintf(__('Please install <em>Dilaz Metabox</em> plugin. It is required in "<em>%s</em>".', 'dilaz-metabox'), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/metabox.php') .'</strong></p></div>';
 		}
 	});
 	
 	return;
+}
+
+# Lets ensure the DilazMetabox class is loaded
+if (!class_exists('DilazMetabox') && file_exists(ABSPATH .'wp-content/plugins/dilaz-metabox/dilaz-metabox.php')) {
+	require_once ABSPATH .'wp-content/plugins/dilaz-metabox/dilaz-metabox.php';
 }
 
 # Metabox options
@@ -65,5 +70,5 @@ $dilaz_meta_boxes = apply_filters('metabox_option_filter_'. $prefix, $dilaz_meta
 # Metabox arguments
 $metabox_args = array($parameters, $dilaz_meta_boxes);
 
-# Initialize the panel object
+# Initialize the metabox object
 if (!$parameters['use_type_error']) new DilazMetabox($metabox_args);
