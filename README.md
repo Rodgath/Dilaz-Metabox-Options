@@ -22,7 +22,7 @@ require_once 'Dilaz-Metaboxes-Options/metabox.php';
 ```
 5. Open ```Dilaz-Metabox-Options``` folder and rename ```config-sample.php``` to ```config.php```.
 6. Open ```Dilaz-Metabox-Options/config.php``` and edit the parameters as you want. Simple guidelines are provided beside each parameter setting.
-7. Open ```Dilaz-Metabox-Options``` folder and rename ```options-sample.php``` to ```options.php```.
+7. Open ```Dilaz-Metabox-Options/options``` folder and rename ```options-sample.php``` to ```options.php```.
 8. Open ```Dilaz-Metabox-Options/options/options.php``` and add your metabox options. 
 
 ***
