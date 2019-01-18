@@ -16,7 +16,7 @@ This helps you to integrate [Dilaz Metabox Plugin](https://github.com/Rodgath/Di
 4. Add the code provided below in your themes __functions.php__ file or in your plugin's __main/index__ file. 
 ```php
 /**
- * Metabox options
+ * Metabox Options
  */
 require_once 'Dilaz-Metaboxes-Options/metabox.php';
 ```
