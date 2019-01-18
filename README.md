@@ -13,7 +13,7 @@ This helps you to integrate [Dilaz Metabox Plugin](https://github.com/Rodgath/Di
       > *wp-content/__plugin-name__/Dilaz-Metabox-Options* <br />
       
    ii) You can optionally rename *Dilaz-Metabox-Options* folder.
-4. Add the code provided below in your themes __functions.php__ file or in your plugin's main/index file. 
+4. Add the code provided below in your themes __functions.php__ file or in your plugin's __main/index__ file. 
 ```php
 /**
  * Metabox options
@@ -28,7 +28,7 @@ require_once 'Dilaz-Metaboxes-Options/metabox.php';
 
 __NOTE:__
 1. ```Dilaz-Metabox-Options/default-options.php``` contains default options as examples for all possible metabox fields.
-2. ```Dilaz-Metabox-Options/custom-options-sample.php``` contains examples showing how use actions hooks to add custom metabox option fields to any Dilaz Metabox implementation.
+2. ```Dilaz-Metabox-Options/custom-options-sample.php``` contains examples showing how to use actions hooks to add custom metabox option fields to any Dilaz Metabox implementation.
 
 
    
