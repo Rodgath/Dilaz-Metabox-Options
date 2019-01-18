@@ -21,10 +21,14 @@ This helps you to integrate [Dilaz Metabox Plugin](https://github.com/Rodgath/Di
 require_once 'Dilaz-Metaboxes-Options/metabox.php';
 ```
 5. Open ```Dilaz-Metabox-Options``` folder and rename ```config-sample.php``` to ```config.php```.
-6. Open ```Dilaz-Metabox-Options/config.php``` and edit the parameters as you want. Simple guidelines are provided for each parameter setting.
+6. Open ```Dilaz-Metabox-Options/config.php``` and edit the parameters as you want. Simple guidelines are provided beside each parameter setting.
 7. Open ```Dilaz-Metabox-Options/options/options.php``` and add your metabox options. 
-8. ```Dilaz-Metabox-Options/default-options.php``` contains default options that you can use. 
-9. ```Dilaz-Metabox-Options/custom-options-sample.php``` contains default options that you can use. 
+
+***
+
+__NOTE:__
+1. ```Dilaz-Metabox-Options/default-options.php``` contains default options as examples for all possible metabox fields.
+2. ```Dilaz-Metabox-Options/custom-options-sample.php``` contains examples showing how use actions hooks to add custom metabox option fields to any Dilaz Metabox implementation.
 
 
    
