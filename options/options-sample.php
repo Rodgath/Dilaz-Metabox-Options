@@ -14,7 +14,7 @@
 || 
 || NOTE 1: Rename this file from "options-sample.php" to "options.php". If you
 ||         don't rename it, all your options and settings will be overwritten
-||         when updating Dilaz Metabox.
+||         when updating Dilaz Metabox Options.
 || 
 || NOTE 2: Add all your theme/plugin metabox options in this file
 || 

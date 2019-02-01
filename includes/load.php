@@ -22,9 +22,9 @@ if (!is_plugin_active('dilaz-metabox/dilaz-metabox.php')) {
 	add_action('admin_notices', function() {
 		$plugins = get_plugins();
 		if (isset($plugins['dilaz-metabox/dilaz-metabox.php'])) {
-			echo '<div id="message" class="notice notice-warning"><p><strong>'. sprintf(__('Please activate <em>Dilaz Metabox</em> plugin. It is required in "<em>%s</em>".', 'dilaz-metabox'), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/metabox.php') .'</strong></p></div>';
+			echo '<div id="message" class="notice notice-warning"><p><strong>'. sprintf(__('Please %1$sactivate%2$s <em>Dilaz Metabox</em> plugin. It is required in "<em>%3$s</em>".', 'dilaz-metabox'), '<a href="'. admin_url('plugins.php') .'">', '</a>', 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/metabox.php') .'</strong></p></div>';
 		} else {
-			echo '<div id="message" class="notice notice-warning"><p><strong>'. sprintf(__('Please install <em>Dilaz Metabox</em> plugin. It is required in "<em>%s</em>".', 'dilaz-metabox'), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/metabox.php') .'</strong></p></div>';
+			echo '<div id="message" class="notice notice-warning"><p><strong>'. sprintf(__('Please %1$sinstall%2$s <em>Dilaz Metabox</em> plugin. It is required in "<em>%3$s</em>".', 'dilaz-metabox'), '<a href="'. admin_url('plugin-install.php') .'">', '</a>', 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/metabox.php') .'</strong></p></div>';
 		}
 	});
 	

@@ -33,7 +33,7 @@ $dilaz_meta_boxes[] = array(
 	$dilaz_meta_boxes[] = array(
 		'id'    => $prefix .'simple_options',
 		'title' => __('Simple Options', 'dilaz-metabox'),
-		'icon'  => 'fa-cog',
+		'icon'  => 'mdi-settings',
 		'type'  => 'metabox_tab'
 	);
 		
@@ -296,7 +296,7 @@ $dilaz_meta_boxes[] = array(
 	$dilaz_meta_boxes[] = array(
 		'id'    => $prefix .'repeatable_fields',
 		'title' => __('Repeatable Options', 'dilaz-metabox'),
-		'icon'  => 'fa-align-justify',
+		'icon'  => 'mdi-view-list',
 		'type'  => 'metabox_tab'
 	);
 		$dilaz_meta_boxes[] = array(
@@ -459,7 +459,7 @@ $dilaz_meta_boxes[] = array(
 	$dilaz_meta_boxes[] = array(
 		'id'    => $prefix .'media_options',
 		'title' => __('Media Options', 'dilaz-metabox'),
-		'icon'  => 'fa-tv',
+		'icon'  => 'mdi-monitor',
 		'type'  => 'metabox_tab'
 	);
 		
@@ -540,7 +540,7 @@ $dilaz_meta_boxes[] = array(
 	$dilaz_meta_boxes[] = array(
 		'id'    => $prefix .'date_options',
 		'title' => __('Date Options', 'dilaz-metabox'),
-		'icon'  => 'fa-calendar',
+		'icon'  => 'mdi-calendar',
 		'type'  => 'metabox_tab'
 	);
 		
@@ -676,7 +676,7 @@ $dilaz_meta_boxes[] = array(
 	$dilaz_meta_boxes[] = array(
 		'id'    => $prefix .'color_options',
 		'title' => __('Color Options', 'dilaz-metabox'),
-		'icon'  => 'fa-paint-brush',
+		'icon'  => 'mdi-format-color-fill',
 		'type'  => 'metabox_tab'
 	);
 		
@@ -710,7 +710,7 @@ $dilaz_meta_boxes[] = array(
 	$dilaz_meta_boxes[] = array(
 		'id'    => $prefix .'choice_options',
 		'title' => __('Choice Options', 'dilaz-metabox'),
-		'icon'  => 'fa-sliders',
+		'icon'  => 'mdi-tune',
 		'type'  => 'metabox_tab'
 	);
 	
@@ -967,7 +967,7 @@ $dilaz_meta_boxes[] = array(
 	$dilaz_meta_boxes[] = array(
 		'id'    => $prefix .'editor_options',
 		'title' => __('Editor Options', 'dilaz-metabox'),
-		'icon'  => 'fa-bold',
+		'icon'  => 'mdi-square-edit-outline',
 		'type'  => 'metabox_tab'
 	);
 		
@@ -993,7 +993,7 @@ $dilaz_meta_boxes[] = array(
 	$dilaz_meta_boxes[] = array(
 		'id'    => $prefix .'conditionals',
 		'title' => __('Conditionals', 'dilaz-metabox'),
-		'icon'  => 'fa-toggle-on',
+		'icon'  => 'mdi-toggle-switch',
 		'type'  => 'metabox_tab'
 	);
 		
@@ -1141,7 +1141,7 @@ $dilaz_meta_boxes[] = array(
 	$dilaz_meta_boxes[] = array(
 		'id'    => $prefix .'beta_tab_1',
 		'title' => __('Beta Tab 1', 'dilaz-metabox'),
-		'icon'  => 'fa-anchor',
+		'icon'  => 'mdi-anchor',
 		'type'  => 'metabox_tab'
 	);
 		
