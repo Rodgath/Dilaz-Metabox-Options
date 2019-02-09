@@ -28,7 +28,7 @@ require_once 'Dilaz-Metaboxes-Options/metabox.php';
 ***
 
 __NOTE:__
-1. ```Dilaz-Metabox-Options/custom-options-sample.php``` contains examples showing how to use actions hooks to add custom metabox option fields to any Dilaz Metabox implementation.
+1. ```Dilaz-Metabox-Options/custom-options-sample.php``` contains examples that show how to use actions hooks to add custom metabox option fields to any Dilaz Metabox implementation.
 2. ```Dilaz-Metabox-Options/default-options.php``` contains default options as examples for all possible metabox fields.
 
 
