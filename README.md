@@ -32,4 +32,15 @@ __NOTE:__
 2. ```Dilaz-Metabox-Options/default-options.php``` contains default options as examples for all possible metabox fields.
 
 
+
+***
+
+## *config.php* parameters
+
+| Parameter     | Type          | Since (Dilaz Metabox)  | Details |
+| :------------- |:----------| :-------------| :----- |
+| `prefix`   | *string* | v2.5.1 | Used to save settings. Must be unique. |
+| `use_type` | *string* | v2.5.1 | Where the panel is used. Enter `theme` if used within a theme OR `plugin` if used within a plugin |
+| `default_options` | *boolean* | v2.5.1 | Whether to load default options. |
+| `custom_options` | *boolean* | v2.5.1 | Whether to load custom options. |
    
