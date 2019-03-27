@@ -74,6 +74,8 @@ if (!is_plugin_active(DILAZ_METABOX_PLUGIN_FILE)) {
 # Lets ensure the DilazMetabox class is loaded
 if (!class_exists('DilazMetabox') && file_exists(ABSPATH .'wp-content/plugins/dilaz-metabox/dilaz-metabox.php')) {
 	require_once ABSPATH .'wp-content/plugins/dilaz-metabox/dilaz-metabox.php';
+} else {
+	return;
 }
 
 # Metabox options
