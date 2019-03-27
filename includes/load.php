@@ -31,7 +31,7 @@ if (!is_plugin_active(DILAZ_METABOX_PLUGIN_FILE)) {
 	add_action('admin_notices', function() {
 		
 		# check if its plugin when in theme use type
-		if (FALSE !== strpos(dirname(__FILE__), '\plugins\\')) {
+		if (FALSE !== strpos(dirname(__FILE__), '\plugins\\') || FALSE !== strpos(dirname(__FILE__), '/plugins/')) {
 			
 			if (!function_exists('get_plugin_data')) require_once ABSPATH . 'wp-admin/includes/plugin.php';
 			
@@ -53,7 +53,7 @@ if (!is_plugin_active(DILAZ_METABOX_PLUGIN_FILE)) {
 			$item_type = 'plugin';
 			
 		# check if its theme when in plugin use type
-		} else if (FALSE !== strpos(dirname(__FILE__), '\themes\\')) {
+		} else if (FALSE !== strpos(dirname(__FILE__), '\themes\\') || FALSE !== strpos(dirname(__FILE__), '/themes/')) {
 			$theme_object = wp_get_theme();
 			$item_name    = is_child_theme() ? $theme_object['Template'] : $theme_object['Name'];
 			$item_type    = 'theme';
