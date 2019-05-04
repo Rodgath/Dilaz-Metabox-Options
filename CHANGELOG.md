@@ -2,6 +2,10 @@
 
 ## Version 2
 
+###### v2.2
+```
+= ADDED - 'DilazMetabox' plugin requirement error notifications
+```
 ###### v2.1
 ```
 General improvements.
