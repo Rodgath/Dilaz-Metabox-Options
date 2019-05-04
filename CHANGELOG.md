@@ -2,6 +2,10 @@
 
 ## Version 2
 
+###### v2.5.2
+```
+= FIXED - Check if 'DilazMetabox' class has been loaded in includes/load.php
+```
 ###### v2.5.1
 ```
 = ADDED - /config-sample.php - Helps in preserving config parameters during updates
