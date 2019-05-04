@@ -2,6 +2,11 @@
 
 ## Version 2
 
+###### v2.5.4
+```
+= REMOVED - Font Awesome webfont icons for tab icons
+= ADDED - Material Design webfont icons for tab icons
+```
 ###### v2.5.3
 ```
 = FIXED - Empty plugin data returned when there's multiple PHP files in the plugin root directory
