@@ -2,6 +2,10 @@
 
 ## Version 2
 
+###### v2.5
+```
+= FIXED - includes/use-type.php bugs
+```
 ###### v2.4
 ```
 = FIXED - changed plugin 'dir_url' parameter from using '$plugin_name_lc' to using '$plugin_folder'
