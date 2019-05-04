@@ -2,7 +2,11 @@
 
 ## Version 2
 
-###### v2.5
+###### v2.5.1
+```
+= ADDED - /config-sample.php - Helps in preserving config parameters during updates
+```
+###### v2.5.0
 ```
 = FIXED - includes/use-type.php bugs
 ```
