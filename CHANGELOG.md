@@ -2,6 +2,10 @@
 
 ## Version 2
 
+###### v2.5.3
+```
+= FIXED - Empty plugin data returned when there's multiple PHP files in the plugin root directory
+```
 ###### v2.5.2
 ```
 = FIXED - Check if 'DilazMetabox' class has been loaded in includes/load.php
