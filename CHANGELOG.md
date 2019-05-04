@@ -2,6 +2,10 @@
 
 ## Version 2
 
+###### v2.3
+```
+= ADDED - Repeatable Field options
+```
 ###### v2.2
 ```
 = ADDED - 'DilazMetabox' plugin requirement error notifications
