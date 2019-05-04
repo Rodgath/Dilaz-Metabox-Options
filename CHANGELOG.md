@@ -2,6 +2,11 @@
 
 ## Version 2
 
+###### v2.5.5
+```
+= IMPROVED - Activate Dilaz Metabox Plugin nag/notice message
+= ADDED - DILAZ_METABOX_PLUGIN_FILE constant
+```
 ###### v2.5.4
 ```
 = REMOVED - Font Awesome webfont icons for tab icons
