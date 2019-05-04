@@ -2,6 +2,10 @@
 
 ## Version 2
 
+###### v2.4
+```
+= FIXED - changed plugin 'dir_url' parameter from using '$plugin_name_lc' to using '$plugin_folder'
+```
 ###### v2.3
 ```
 = ADDED - Repeatable Field options
