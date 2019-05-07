@@ -7,9 +7,9 @@
 || @package		Dilaz Metabox
 || @subpackage	Default Options
 || @since		Dilaz Metabox 1.0
-|| @author		WebDilaz Team, http://webdilaz.com
-|| @copyright	Copyright (C) 2017, WebDilaz LTD
-|| @link		http://webdilaz.com/metaboxes
+|| @author		Rodgath, https://github.com/Rodgath
+|| @copyright	Copyright (C) 2017, Rodgath LTD
+|| @link		https://github.com/Rodgath/Dilaz-Metabox-Plugin
 || @license		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 || 
 */
@@ -210,9 +210,9 @@ $dilaz_meta_boxes[] = array(
 			'desc'  => __('Description 1.', 'dilaz-metabox'),
 			'desc2' => __('Description 2.', 'dilaz-metabox'),
 			'type'  => 'paragraph',
-			'value' => 'Your privacy is important to us. We at ThemeDilaz, have created this privacy policy to demonstrate our firm commitment to protecting your personal information and informing you about how we handle it. 
+			'value' => 'Your privacy is important to us. We at CompanyNAME, have created this privacy policy to demonstrate our firm commitment to protecting your personal information and informing you about how we handle it. 
 			
-			This privacy policy only applies to transactions and activities in which you engage, and data gathered, on the ThemeDilaz Website. Please review this privacy policy periodically as we may modify it from time to time. 
+			This privacy policy only applies to transactions and activities in which you engage, and data gathered, on the CompanyNAME Website. Please review this privacy policy periodically as we may modify it from time to time. 
 			
 			Each time you visit the Site or provide us with information, by doing so you are accepting the practices described in this privacy policy at that time.',
 		);
