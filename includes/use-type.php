@@ -61,6 +61,8 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 		# check if panel is used in 'theme' or 'plugin'
 		$current_use_type = dilaz_panel_get_use_type();
 	
+		echo '<div id="message" class="dilaz-panel-notice notice notice-warning error"><p><strong>'. sprintf( __( 'Wrong "use type" for admin options. Please set "<em>use_type</em>" parameter value to "<em>%1$s</em>" in "<em>%2$s</em>".', 'dilaz-panel' ), $current_use_type, 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
+	
 }
 
 $parameters = wp_parse_args($use_type_parameters, $parameters);
