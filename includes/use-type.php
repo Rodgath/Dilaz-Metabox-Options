@@ -58,6 +58,9 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	
 	# Show "use_type" parameter value error incase the user adds neither 'plugin' nor 'theme'
 	
+		# check if panel is used in 'theme' or 'plugin'
+		$current_use_type = dilaz_panel_get_use_type();
+	
 }
 
 $parameters = wp_parse_args($use_type_parameters, $parameters);
