@@ -22,7 +22,7 @@ $parameters['use_type_error'] = false;
 if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	
 	# check if its plugin when in theme use type
-	if (strpos(dirname(__FILE__), '\plugins\\') !== false) {
+	if ('plugin' == dilaz_panel_get_use_type()) {
 		
 		add_action('admin_notices', function() {
 			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Wrong use-type for metabox options. Please set "<em>use_type</em>" parameter to "<em>plugin</em>" in "<em>%s</em>".', 'dilaz-metabox' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
