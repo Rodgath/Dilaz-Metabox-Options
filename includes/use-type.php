@@ -65,6 +65,9 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 		echo '<div id="message" class="dilaz-panel-notice notice notice-warning error"><p><strong>'. sprintf( __( 'Wrong "use type" for admin options. Please set "<em>use_type</em>" parameter value to "<em>%1$s</em>" in "<em>%2$s</em>".', 'dilaz-panel' ), $current_use_type, 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
 	});
 	
+	# set use type error
+	$parameters['use_type_error'] = true;
+	
 }
 
 $parameters = wp_parse_args($use_type_parameters, $parameters);
