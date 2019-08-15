@@ -24,6 +24,9 @@ $dilaz_mb_options  = $dilaz_mb_dir .'/options/';
 
 # Define min PHP requirement
 defined('DILAZ_METABOX_MIN_PHP') || define('DILAZ_METABOX_MIN_PHP', 5.6);
+	
+# Define min WP requirement
+defined('DILAZ_METABOX_MIN_WP') || define('DILAZ_METABOX_MIN_WP', 4.5);
 
 # Dilaz Metabox plugin file constant
 defined('DILAZ_METABOX_PLUGIN_FILE') || define('DILAZ_METABOX_PLUGIN_FILE', 'dilaz-metabox/dilaz-metabox.php');
