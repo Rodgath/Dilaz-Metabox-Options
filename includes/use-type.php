@@ -42,9 +42,10 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	if ('theme' == dilaz_panel_get_use_type()) {
 		
 		add_action('admin_notices', function() {
-			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Wrong use-type for metabox options. Please set "<em>use_type</em>" parameter to "<em>theme</em>" in "<em>%s</em>".', 'dilaz-metabox' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
+			echo '<div id="message" class="dilaz-panel-notice notice notice-warning error"><p><strong>'. sprintf( __( 'Wrong "use type" for admin options. Please set "<em>use_type</em>" parameter value to "<em>theme</em>" in "<em>%s</em>".', 'dilaz-panel' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
 		});
 		
+		# set use type error
 		$parameters['use_type_error'] = true;
 		
 	} else {
