@@ -32,29 +32,8 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 		
 	} else {
 		
-		$theme_object  = wp_get_theme();
-		$theme_name    = is_child_theme() ? $theme_object['Template'] : $theme_object['Name'];
-		$theme_name_lc = strtolower($theme_name);
-		$theme_version = $theme_object['Version'];
-		$theme_uri     = get_template_directory_uri();
-		$theme_folder  = basename($theme_uri);
+		$use_type_parameters = dilaz_panel_theme_params();
 		
-		/* 
-		 * If the theme folder name string appears multiple times,
-		 * lets split the string as shown below and focus only 
-		 * on the last theme folder name string
-		 */
-		$split_1      = explode('includes', dirname(__FILE__));
-		$split_2      = explode($theme_folder, $split_1[0]);
-		$split_2_last = array_pop($split_2);
-		
-		$use_type_parameters = array(
-			'item_name'    => $theme_name,
-			'item_version' => $theme_version,
-			'dir_url'      => trailingslashit($theme_uri . wp_normalize_path($split_2_last)),
-		);
-		
-		update_option('dilaz_'.$parameters['use_type'].'_'.$theme_name.'_prefix', $prefix);
 	}
 
 } else if (isset($parameters['use_type']) && $parameters['use_type'] == 'plugin') {
