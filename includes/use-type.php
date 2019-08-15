@@ -67,7 +67,6 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	
 	# set use type error
 	$parameters['use_type_error'] = true;
-	
 }
 
 $parameters = wp_parse_args($use_type_parameters, $parameters);
