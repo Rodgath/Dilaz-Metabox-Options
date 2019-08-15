@@ -31,6 +31,17 @@ defined('DILAZ_METABOX_MIN_WP') || define('DILAZ_METABOX_MIN_WP', 4.5);
 # Dilaz Metabox plugin file constant
 defined('DILAZ_METABOX_PLUGIN_FILE') || define('DILAZ_METABOX_PLUGIN_FILE', 'dilaz-metabox/dilaz-metabox.php');
 
+# Dilaz metabox get use type based on current metabox usage
+function dilaz_metabox_get_use_type() {
+	if (FALSE !== strpos(dirname(__FILE__), '\plugins\\') || FALSE !== strpos(dirname(__FILE__), '/plugins/')) {
+		return 'plugin';
+	} else if (FALSE !== strpos(dirname(__FILE__), '\themes\\') || FALSE !== strpos(dirname(__FILE__), '/themes/')) {
+		return 'theme';
+	} else {
+		return FALSE;
+	}
+}
+
 # Check if DilazMetabox plugin is installed and/or activated
 if (!function_exists('is_plugin_active')) include_once ABSPATH . 'wp-admin/includes/plugin.php';
 if (!is_plugin_active(DILAZ_METABOX_PLUGIN_FILE)) {
