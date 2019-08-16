@@ -130,6 +130,11 @@ if (version_compare(PHP_VERSION, DILAZ_METABOX_MIN_PHP, '<')) {
 # Check WP version if Dilaz Metabox plugin is enabled
 if (version_compare($GLOBALS['wp_version'], DILAZ_METABOX_MIN_WP, '<')) {
 	add_action('admin_notices', function() {
+		
+		$use_type_name   = dilaz_metabox_get_use_type();
+		$use_type_params = 'plugin' == $use_type_name ? dilaz_metabox_plugin_params() : dilaz_metabox_theme_params();
+		
+		echo '<div id="message" class="dilaz-metabox-notice notice notice-warning"><p><strong>'. sprintf(__('WordPress version <em>%1$s</em> detected. <em>%2$s</em> %3$s metabox options recommends that you upgrade to WordPress version <em>%4$s</em> or the most recent release of WordPress.', 'dilaz-metabox'), $GLOBALS['wp_version'], $use_type_params['item_name'], $use_type_name, DILAZ_METABOX_MIN_WP) .'</strong></p></div>';
 	});
 }
 
