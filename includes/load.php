@@ -105,6 +105,15 @@ function dilaz_metabox_plugin_params() {
 	$split_2      = explode($plugin_folder, $split_1[0]);
 	$split_2_last = array_pop($split_2);
 	$split_3      = array($split_2_last, implode($plugin_folder, $split_2));
+	
+	$use_type_parameters = array(
+		'item_name'    => $plugin_name,
+		'item_version' => $plugin_version,
+		'item_url'     => trailingslashit($split_3[1].$plugin_folder),
+		'dir_url'      => trailingslashit($split_3[1].$plugin_folder.wp_normalize_path($split_3[0])),
+	);
+
+	return $use_type_parameters;
 }
 
 # Check if DilazMetabox plugin is installed and/or activated
