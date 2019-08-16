@@ -115,6 +115,10 @@ function dilaz_metabox_plugin_params() {
 
 	return $use_type_parameters;
 }
+	
+# Check PHP version if Dilaz Metabox plugin is enabled
+if (version_compare(PHP_VERSION, DILAZ_METABOX_MIN_PHP, '<')) {
+}
 
 # Check if DilazMetabox plugin is installed and/or activated
 if (!function_exists('is_plugin_active')) include_once ABSPATH . 'wp-admin/includes/plugin.php';
