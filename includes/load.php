@@ -45,6 +45,13 @@ function dilaz_metabox_get_use_type() {
 # Dilaz metabox theme object
 function dilaz_metabox_theme_params() {
 	
+	$theme_object  = wp_get_theme();
+	$theme_name    = is_child_theme() ? $theme_object['Template'] : $theme_object['Name'];
+	$theme_name_lc = strtolower($theme_name);
+	$theme_version = $theme_object['Version'];
+	$theme_uri     = is_child_theme() ? get_stylesheet_directory_uri() : get_template_directory_uri();
+	$theme_folder  = basename($theme_uri);
+	
 }
 
 # Check if DilazMetabox plugin is installed and/or activated
