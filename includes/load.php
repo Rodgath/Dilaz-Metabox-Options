@@ -79,6 +79,10 @@ function dilaz_metabox_plugin_params() {
 	}
 	
 	$plugin_data = [];
+	
+	$plugins_dir     = ABSPATH . 'wp-content/plugins/'; 
+	$plugin_basename = plugin_basename(__FILE__);
+	$plugin_folder   = strtok($plugin_basename, '/');
 }
 
 # Check if DilazMetabox plugin is installed and/or activated
