@@ -118,6 +118,8 @@ function dilaz_metabox_plugin_params() {
 	
 # Check PHP version if Dilaz Metabox plugin is enabled
 if (version_compare(PHP_VERSION, DILAZ_METABOX_MIN_PHP, '<')) {
+	add_action('admin_notices', function() {
+	});	
 }
 
 # Check if DilazMetabox plugin is installed and/or activated
