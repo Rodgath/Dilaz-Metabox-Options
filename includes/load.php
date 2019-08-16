@@ -129,6 +129,8 @@ if (version_compare(PHP_VERSION, DILAZ_METABOX_MIN_PHP, '<')) {
 
 # Check WP version if Dilaz Metabox plugin is enabled
 if (version_compare($GLOBALS['wp_version'], DILAZ_METABOX_MIN_WP, '<')) {
+	add_action('admin_notices', function() {
+	});
 }
 
 # Check if DilazMetabox plugin is installed and/or activated
