@@ -52,6 +52,15 @@ function dilaz_metabox_theme_params() {
 	$theme_uri     = is_child_theme() ? get_stylesheet_directory_uri() : get_template_directory_uri();
 	$theme_folder  = basename($theme_uri);
 	
+	/* 
+	 * If the theme folder name string appears multiple times,
+	 * lets split the string as shown below and focus only 
+	 * on the last theme folder name string
+	 */
+	$split_1      = explode('includes', dirname(__FILE__));
+	$split_2      = explode($theme_folder, $split_1[0]);
+	$split_2_last = array_pop($split_2);
+	
 }
 
 # Check if DilazMetabox plugin is installed and/or activated
