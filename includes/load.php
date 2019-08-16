@@ -95,6 +95,16 @@ function dilaz_metabox_plugin_params() {
 	$plugin_name    = $plugin_data['Name'];
 	$plugin_name_lc = strtolower($plugin_name);
 	$plugin_version = $plugin_data['Version'];
+	
+	/* 
+	 * If the theme name string multiple times, lets
+	 * split the string as show below and focus only 
+	 * on the last theme name string
+	 */
+	$split_1      = explode('includes', plugin_dir_url(__FILE__));
+	$split_2      = explode($plugin_folder, $split_1[0]);
+	$split_2_last = array_pop($split_2);
+	$split_3      = array($split_2_last, implode($plugin_folder, $split_2));
 }
 
 # Check if DilazMetabox plugin is installed and/or activated
