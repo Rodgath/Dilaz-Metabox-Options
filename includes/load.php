@@ -91,6 +91,10 @@ function dilaz_metabox_plugin_params() {
 		# lets ensure we don't return empty plugin data
 		if (empty($plugin_data['Name'])) continue; else break;
 	}
+	
+	$plugin_name    = $plugin_data['Name'];
+	$plugin_name_lc = strtolower($plugin_name);
+	$plugin_version = $plugin_data['Version'];
 }
 
 # Check if DilazMetabox plugin is installed and/or activated
