@@ -61,6 +61,14 @@ function dilaz_metabox_theme_params() {
 	$split_2      = explode($theme_folder, $split_1[0]);
 	$split_2_last = array_pop($split_2);
 	
+	$use_type_parameters = array(
+		'item_name'    => $theme_name,
+		'item_version' => $theme_version,
+		'item_url'     => trailingslashit($theme_uri),
+		'dir_url'      => trailingslashit($theme_uri . wp_normalize_path($split_2_last)),
+	);
+	
+	return $use_type_parameters;
 }
 
 # Check if DilazMetabox plugin is installed and/or activated
