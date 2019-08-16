@@ -83,6 +83,14 @@ function dilaz_metabox_plugin_params() {
 	$plugins_dir     = ABSPATH . 'wp-content/plugins/'; 
 	$plugin_basename = plugin_basename(__FILE__);
 	$plugin_folder   = strtok($plugin_basename, '/');
+	
+	# use global to check plugin data from all PHP files within plugin main folder
+	foreach (glob(trailingslashit($plugins_dir . $plugin_folder) . '*.php') as $file) {
+		$plugin_data = get_plugin_data($file);
+		
+		# lets ensure we don't return empty plugin data
+		if (empty($plugin_data['Name'])) continue; else break;
+	}
 }
 
 # Check if DilazMetabox plugin is installed and/or activated
