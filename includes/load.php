@@ -42,6 +42,11 @@ function dilaz_metabox_get_use_type() {
 	}
 }
 
+# Dilaz metabox theme object
+function dilaz_metabox_theme_params() {
+	
+}
+
 # Check if DilazMetabox plugin is installed and/or activated
 if (!function_exists('is_plugin_active')) include_once ABSPATH . 'wp-admin/includes/plugin.php';
 if (!is_plugin_active(DILAZ_METABOX_PLUGIN_FILE)) {
