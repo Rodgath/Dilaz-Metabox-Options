@@ -80,7 +80,7 @@ function dilaz_metabox_plugin_params() {
 	
 	$plugin_data = [];
 	
-	$plugins_dir     = ABSPATH . 'wp-content/plugins/'; 
+	$plugins_dir     = trailingslashit(WP_PLUGIN_DIR); 
 	$plugin_basename = plugin_basename(__FILE__);
 	$plugin_folder   = strtok($plugin_basename, '/');
 	
@@ -150,7 +150,7 @@ if (!is_plugin_active(DILAZ_METABOX_PLUGIN_FILE)) {
 			
 			$plugin_data = [];
 			
-			$plugins_dir     = ABSPATH . 'wp-content/plugins/'; 
+			$plugins_dir     = trailingslashit(WP_PLUGIN_DIR); 
 			$plugin_basename = plugin_basename(__FILE__);
 			$plugin_folder   = strtok($plugin_basename, '/');
 			
@@ -186,8 +186,8 @@ if (!is_plugin_active(DILAZ_METABOX_PLUGIN_FILE)) {
 
 # Lets ensure the DilazMetabox class is loaded
 if (!class_exists('DilazMetabox')) {
-	if (file_exists(ABSPATH .'wp-content/plugins/dilaz-metabox/dilaz-metabox.php')) {
-		require_once ABSPATH .'wp-content/plugins/dilaz-metabox/dilaz-metabox.php';
+	if (file_exists(trailingslashit(WP_PLUGIN_DIR) . 'dilaz-metabox/dilaz-metabox.php')) {
+		require_once trailingslashit(WP_PLUGIN_DIR) . 'dilaz-metabox/dilaz-metabox.php';
 	} else {
 		return;
 	}
