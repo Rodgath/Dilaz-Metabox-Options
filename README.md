@@ -44,3 +44,20 @@ __NOTE:__
 | `default_options` | *boolean* | v2.5.1 | Whether to load default options. |
 | `custom_options` | *boolean* | v2.5.1 | Whether to load custom options. |
    
+
+## Download 
+
+To get a local working copy of the development repository, do:
+
+    git clone https://github.com/Rodgath/Dilaz-Metabox-Options.git
+
+Alternatively, you can download the latest development version as a tarball
+as follows:
+
+    wget --content-disposition https://github.com/Rodgath/Dilaz-Metabox-Options/tarball/master
+
+OR 
+
+    curl -LJO https://github.com/Rodgath/Dilaz-Metabox-Options/tarball/master
+    
+ 
