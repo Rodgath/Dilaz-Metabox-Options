@@ -22,27 +22,27 @@ $parameters['use_type_error'] = false;
 if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	
 	# check if its plugin when in theme use type
-	if ('plugin' == dilaz_panel_get_use_type()) {
+	if ('plugin' == dilaz_metabox_get_use_type()) {
 		
 		add_action('admin_notices', function() {
-			echo '<div id="message" class="dilaz-panel-notice notice notice-warning error"><p><strong>'. sprintf( __( 'Wrong "use type" for admin options. Please set "<em>use_type</em>" parameter value to "<em>plugin</em>" in "<em>%s</em>".', 'dilaz-panel' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
+			echo '<div id="message" class="dilaz-metabox-notice notice notice-warning error"><p><strong>'. sprintf( __( 'Wrong "use type" for admin options. Please set "<em>use_type</em>" parameter value to "<em>plugin</em>" in "<em>%s</em>".', 'dilaz-metabox' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
 		});
 		
 		$parameters['use_type_error'] = true;
 		
 	} else {
 		
-		$use_type_parameters = dilaz_panel_theme_params();
+		$use_type_parameters = dilaz_metabox_theme_params();
 		
 	}
 
 } else if (isset($parameters['use_type']) && $parameters['use_type'] == 'plugin') {
 	
 	# check if its theme when in plugin use type
-	if ('theme' == dilaz_panel_get_use_type()) {
+	if ('theme' == dilaz_metabox_get_use_type()) {
 		
 		add_action('admin_notices', function() {
-			echo '<div id="message" class="dilaz-panel-notice notice notice-warning error"><p><strong>'. sprintf( __( 'Wrong "use type" for admin options. Please set "<em>use_type</em>" parameter value to "<em>theme</em>" in "<em>%s</em>".', 'dilaz-panel' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
+			echo '<div id="message" class="dilaz-metabox-notice notice notice-warning error"><p><strong>'. sprintf( __( 'Wrong "use type" for admin options. Please set "<em>use_type</em>" parameter value to "<em>theme</em>" in "<em>%s</em>".', 'dilaz-metabox' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
 		});
 		
 		# set use type error
@@ -50,7 +50,7 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 		
 	} else {
 		
-		$use_type_parameters = dilaz_panel_plugin_params();
+		$use_type_parameters = dilaz_metabox_plugin_params();
 		
 	}
 	
@@ -59,10 +59,10 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	# Show "use_type" parameter value error incase the user adds neither 'plugin' nor 'theme'
 	add_action('admin_notices', function() {
 	
-		# check if panel is used in 'theme' or 'plugin'
-		$current_use_type = dilaz_panel_get_use_type();
+		# check if metabox is used in 'theme' or 'plugin'
+		$current_use_type = dilaz_metabox_get_use_type();
 	
-		echo '<div id="message" class="dilaz-panel-notice notice notice-warning error"><p><strong>'. sprintf( __( 'Wrong "use type" for admin options. Please set "<em>use_type</em>" parameter value to "<em>%1$s</em>" in "<em>%2$s</em>".', 'dilaz-panel' ), $current_use_type, 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
+		echo '<div id="message" class="dilaz-metabox-notice notice notice-warning error"><p><strong>'. sprintf( __( 'Wrong "use type" for admin options. Please set "<em>use_type</em>" parameter value to "<em>%1$s</em>" in "<em>%2$s</em>".', 'dilaz-metabox' ), $current_use_type, 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
 	});
 	
 	# set use type error
