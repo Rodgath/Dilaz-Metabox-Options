@@ -485,6 +485,7 @@ $dilaz_meta_boxes[] = array(
 			'std'  => '',
 			'args' => array(
 				'file_type' => 'image', 
+				'show_thumb' => false, 
 				// 'file_specific' => true
 			),
 		);
@@ -671,6 +672,76 @@ $dilaz_meta_boxes[] = array(
 			),
 		);
 	
+	# TAB - Font Options Set
+	# *****************************************************************************************
+	$dilaz_meta_boxes[] = array(
+		'id'    => $prefix .'font_options',
+		'title' => __('Typography Options', 'dilaz-metabox'),
+		'icon'  => 'mdi-format-font',
+		'type'  => 'metabox_tab'
+	);
+		
+		# FIELDS - Font Fields
+		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		$dilaz_meta_boxes[] = array(
+			'id'	  => $prefix .'font',
+			'name'	  => __('Font:', 'dilaz-metabox'),
+			'desc'	  => __('Typography style with many option properties.', 'dilaz-metabox'),
+			'type'	  => 'font',
+			'options' => array( 
+				'family' => true,
+				'backup' => true, 
+				'subset' => true,
+				'weight' => true,
+				'size'   => true, 
+				'height' => true, 
+				'style'  => true, 
+				'case'   => true, 
+				'color'  => true
+			),
+			'std' => array(
+				'family' => 'Trebuchet', 
+				'backup' => false, 
+				'subset' => false, 
+				'weight' => false,
+				'size'   => '18', 
+				'height' => false,
+				'style'  => false,
+				'case'   => false,
+				'color'  => false,
+			),
+			'class' => ''
+		);
+		$dilaz_meta_boxes[] = array(
+			'id'	  => $prefix .'font_2',
+			'name'	  => __('Font:', 'dilaz-metabox'),
+			'desc'	  => __('Typography style with few option properties.', 'dilaz-metabox'),
+			'type'    => 'font',
+			'options' => array( 
+				'family' => true, 
+				'backup' => true, 
+				'subset' => false, 
+				'weight' => true, 
+				'size'   => true, 
+				'height' => true, 
+				'style'  => true, 
+				'case'   => true, 
+				'color'  => true, 
+			),
+			'std' => array(
+				'family' => 'Trebuchet', 
+				'backup' => false,
+				'subset' => false,
+				'weight' => false,
+				'size'   => false,
+				'height' => false,
+				'style'  => 'italic',
+				'case'   => false,
+				'color'  => false,
+			),
+			'class' => ''
+		);
+	
 	# TAB - Color Options Set
 	# *****************************************************************************************
 	$dilaz_meta_boxes[] = array(
@@ -802,7 +873,7 @@ $dilaz_meta_boxes[] = array(
 			'name'	  => __('Timezone:', 'dilaz-metabox'),
 			'desc'	  => __('Select preferred time zone.', 'dilaz-metabox'),
 			'type'	  => 'timezone',
-			'options' => DilazMetaboxFunction::time_zones(),
+			'options' => DilazMetaboxFunction::timeZones(),
 			'std'     => ''
 		);
 		$dilaz_meta_boxes[] = array(
@@ -810,7 +881,7 @@ $dilaz_meta_boxes[] = array(
 			'name'	  => __('Timezone Select2:', 'dilaz-metabox'),
 			'desc'	  => __('Select preferred time zone - with select2 search capability.', 'dilaz-metabox'),
 			'type'	  => 'timezone',
-			'options' => DilazMetaboxFunction::time_zones(),
+			'options' => DilazMetaboxFunction::timeZones(),
 			'std'     => '',
 			'args'    => array(
 				'select2'      => 'select2single',

@@ -118,7 +118,7 @@ add_filter('metabox_option_filter_'. $prefix, function($dilaz_meta_boxes, $prefi
 		'std'     => 'yes'
 	);
 	
-	$insert = DilazMetaboxFunction::insert_field($dilaz_meta_boxes,  $prefix .'custom_options_imp',  $prefix .'custom_3', $insert_custom_data, 'before');
+	$insert = DilazMetaboxFunction::insertField($dilaz_meta_boxes,  $prefix .'custom_options_imp',  $prefix .'custom_3', $insert_custom_data, 'before');
 	
 	return ($insert != false) ? array_merge($dilaz_meta_boxes, $insert) : $dilaz_meta_boxes;
 	
