@@ -10,11 +10,11 @@
 || @since       Dilaz Metabox 1.0
 || @author      Rodgath, https://github.com/Rodgath
 || @copyright   Copyright (C) 2017, Rodgath LTD
-|| @link        https://github.com/Rodgath/Dilaz-Metabox-Plugin
+|| @link        https://github.com/Rodgath/Dilaz-Metabox
 || @License     GPL-2.0+
 || @License URI http://www.gnu.org/licenses/gpl-2.0.txt
 || 
-|| NOTE: This metabox options panel requires "Dilaz-Metabox-Plugin" to be installed. 
+|| NOTE: This metabox options panel requires "Dilaz-Metabox" to be installed. 
 || 
 */
 
