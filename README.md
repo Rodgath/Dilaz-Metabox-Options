@@ -6,7 +6,7 @@ This helps you to integrate [Dilaz Metabox Plugin](https://github.com/Rodgath/Di
 2. Download [Dilaz Metabox Options](https://github.com/Rodgath/Dilaz-Metabox-Options/archive/master.zip).
 3. Add *Dilaz-Metabox-Options* to the root directory of your theme or plugin. <br />
    i) For example: <br />
-      > *wp-content/plugins/__theme-name__/Dilaz-Metabox-Options*
+      > *wp-content/themes/__theme-name__/Dilaz-Metabox-Options*
       
       __OR__
       
