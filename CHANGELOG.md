@@ -2,6 +2,10 @@
 
 ## Version 2
 
+###### v2.5.6
+```
+= ADDED - Integration with main plugin namespace
+```
 ###### v2.5.5
 ```
 = IMPROVED - Activate Dilaz Metabox Plugin nag/notice message
