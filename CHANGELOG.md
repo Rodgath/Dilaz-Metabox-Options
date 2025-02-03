@@ -2,7 +2,7 @@
 
 ## Version 2
 
-###### v2.5.6
+###### v2.6.0
 ```
 = ADDED - Integration with main plugin namespace
 ```
