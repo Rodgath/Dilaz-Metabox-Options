@@ -22,6 +22,7 @@
 
 defined('ABSPATH') || exit;
 
+use DilazMetabox\DilazMetaboxFunction;
 
 # BOX - Sample Set 1
 # =============================================================================================
@@ -50,7 +51,7 @@ $dilaz_meta_boxes[] = array(
 			'name'	  => __('Tab 1 - Option 1:', 'dilaz-metabox'),
 			'desc'	  => '',
 			'type'	  => 'radio',
-			'options' => DilazMetaboxFunction::choice('yes_no'),
+			'options' => DilazMetaboxFunction\DilazMetaboxFunction::choice('yes_no'),
 			'std'     => 'no'
 		);
 		
@@ -71,7 +72,7 @@ $dilaz_meta_boxes[] = array(
 			'name'	  => __('Tab 2 - Option 1:', 'dilaz-metabox'),
 			'desc'	  => '',
 			'type'	  => 'radio',
-			'options' => DilazMetaboxFunction::choice('yes_no'),
+			'options' => DilazMetaboxFunction\DilazMetaboxFunction::choice('yes_no'),
 			'std'     => 'no'
 		);
 		
@@ -105,7 +106,7 @@ $dilaz_meta_boxes[] = array(
 			'name'	  => __('Tab 1 - Option 1:', 'dilaz-metabox'),
 			'desc'	  => '',
 			'type'	  => 'radio',
-			'options' => DilazMetaboxFunction::choice('yes_no'),
+			'options' => DilazMetaboxFunction\DilazMetaboxFunction::choice('yes_no'),
 			'std'     => 'no'
 		);
 		

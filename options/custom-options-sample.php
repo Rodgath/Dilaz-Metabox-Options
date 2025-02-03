@@ -22,6 +22,7 @@
 
 defined('ABSPATH') || exit;
 
+use DilazMetabox\DilazMetaboxFunction;
 
 /**
  * Add custom metaboxes into dilaz metaboxes
@@ -69,7 +70,7 @@ add_filter('metabox_option_filter_'. $prefix, function($dilaz_meta_boxes, $prefi
 				'name'	  => __('Custom Two:', 'dilaz-metabox'),
 				'desc'	  => '',
 				'type'	  => 'radio',
-				'options' => DilazMetaboxFunction::choice('yes_no'),
+				'options' => DilazMetaboxFunction\DilazMetaboxFunction::choice('yes_no'),
 				'std'     => 'no'
 			);
 			$dilaz_meta_boxes[] = array(
@@ -77,7 +78,7 @@ add_filter('metabox_option_filter_'. $prefix, function($dilaz_meta_boxes, $prefi
 				'name'	  => __('Custom Three:', 'dilaz-metabox'),
 				'desc'	  => '',
 				'type'	  => 'radio',
-				'options' => DilazMetaboxFunction::choice('yes_no'),
+				'options' => DilazMetaboxFunction\DilazMetaboxFunction::choice('yes_no'),
 				'std'     => 'no'
 			);
 	
@@ -105,7 +106,7 @@ add_filter('metabox_option_filter_'. $prefix, function($dilaz_meta_boxes, $prefi
 		'name'	  => __('INSERTED - Custom Two B:', 'dilaz-metabox'),
 		'desc'	  => __('Custom Two B inserted before Custom Two C.', 'dilaz-metabox'),
 		'type'	  => 'radio',
-		'options' => DilazMetaboxFunction::choice('def_yes_no'),
+		'options' => DilazMetaboxFunction\DilazMetaboxFunction::choice('def_yes_no'),
 		'std'     => 'yes'
 	);
 	
@@ -114,11 +115,11 @@ add_filter('metabox_option_filter_'. $prefix, function($dilaz_meta_boxes, $prefi
 		'name'	  => __('INSERTED - Custom Two C:', 'dilaz-metabox'),
 		'desc'	  => __('Custom Two C inserted before Custom Three.', 'dilaz-metabox'),
 		'type'	  => 'radio',
-		'options' => DilazMetaboxFunction::choice('def_yes_no'),
+		'options' => DilazMetaboxFunction\DilazMetaboxFunction::choice('def_yes_no'),
 		'std'     => 'yes'
 	);
 	
-	$insert = DilazMetaboxFunction::insert_field($dilaz_meta_boxes,  $prefix .'custom_options_imp',  $prefix .'custom_3', $insert_custom_data, 'before');
+	$insert = DilazMetaboxFunction\DilazMetaboxFunction::insert_field($dilaz_meta_boxes,  $prefix .'custom_options_imp',  $prefix .'custom_3', $insert_custom_data, 'before');
 	
 	return ($insert != false) ? array_merge($dilaz_meta_boxes, $insert) : $dilaz_meta_boxes;
 	

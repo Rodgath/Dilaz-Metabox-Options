@@ -16,6 +16,7 @@
 
 defined('ABSPATH') || exit;
 
+use DilazMetabox\DilazMetaboxFunction;
 
 # BOX - Options Set 1
 # =============================================================================================
@@ -873,7 +874,7 @@ $dilaz_meta_boxes[] = array(
 			'name'	  => __('Timezone:', 'dilaz-metabox'),
 			'desc'	  => __('Select preferred time zone.', 'dilaz-metabox'),
 			'type'	  => 'timezone',
-			'options' => DilazMetaboxFunction::time_zones(),
+			'options' => DilazMetaboxFunction\DilazMetaboxFunction::time_zones(),
 			'std'     => ''
 		);
 		$dilaz_meta_boxes[] = array(
@@ -881,7 +882,7 @@ $dilaz_meta_boxes[] = array(
 			'name'	  => __('Timezone Select2:', 'dilaz-metabox'),
 			'desc'	  => __('Select preferred time zone - with select2 search capability.', 'dilaz-metabox'),
 			'type'	  => 'timezone',
-			'options' => DilazMetaboxFunction::time_zones(),
+			'options' => DilazMetaboxFunction\DilazMetaboxFunction::time_zones(),
 			'std'     => '',
 			'args'    => array(
 				'select2'      => 'select2single',
