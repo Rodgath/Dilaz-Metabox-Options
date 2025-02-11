@@ -6,7 +6,7 @@
 ||
 || @package     Dilaz Metabox
 || @subpackage  Metabox
-|| @version     2.6.0
+|| @version     2.6.1
 || @since       Dilaz Metabox 1.0
 || @author      Rodgath, https://github.com/Rodgath
 || @copyright   Copyright (C) 2017, Rodgath LTD
@@ -20,8 +20,16 @@
 
 defined('ABSPATH') || exit;
 
-# Load config
-file_exists(dirname(__FILE__) .'/config.php') ? require_once dirname(__FILE__) .'/config.php' : require_once dirname(__FILE__) .'/config-sample.php';
+/**
+ * Run this later than init but before templates are loaded.
+ * @fix: Ensure all required plugins/themes are loaded first.
+ * @since v2.6.1
+ */
+add_action('after_setup_theme', function () {
 
-# Load metabox options
-require_once dirname(__FILE__) .'/includes/load.php';
+  # Load config
+  file_exists(dirname(__FILE__) . '/config.php') ? require_once dirname(__FILE__) . '/config.php' : require_once dirname(__FILE__) . '/config-sample.php';
+
+  # Load metabox options
+  require_once dirname(__FILE__) . '/includes/load.php';
+});
