@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
 || --------------------------------------------------------------------------------------------
 || Metabox Config
@@ -11,11 +11,11 @@
 || @copyright  Copyright (C) 2017, Rodgath LTD
 || @link       https://github.com/Rodgath/Dilaz-Metabox
 || @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-|| 
+||
 || NOTE: Rename this file from "config-sample.php" to "config.php". If you
 ||       don't rename it, all your config and settings will be overwritten
 ||       when updating Dilaz Metabox Options.
-|| 
+||
 */
 
 defined('ABSPATH') || exit;

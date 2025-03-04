@@ -11,7 +11,7 @@
 || @copyright  Copyright (C) 2017, Rodgath LTD
 || @link       https://github.com/Rodgath/Dilaz-Metabox
 || @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-|| 
+||
 */
 
 defined('ABSPATH') || exit;
@@ -28,7 +28,7 @@ $dilaz_meta_boxes[] = array(
 	'priority' => 'high',
 	'type'     => 'metabox_set'
 );
-	
+
 	# TAB - Simple Options Set
 	# *****************************************************************************************
 	$dilaz_meta_boxes[] = array(
@@ -37,7 +37,7 @@ $dilaz_meta_boxes[] = array(
 		'icon'  => 'mdi-settings',
 		'type'  => 'metabox_tab'
 	);
-		
+
 		# FIELDS - Simple Fields
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$dilaz_meta_boxes[] = array(
@@ -46,9 +46,9 @@ $dilaz_meta_boxes[] = array(
 			'desc' => __('Set range between two minimum and maximum values.', 'dilaz-metabox'),
 			'type' => 'range',
 			'args' => array(
-				'min'           => array( 8,   __('Min', 'dilaz-metabox') ), 
-				'max'           => array( 100, __('Max', 'dilaz-metabox') ), 
-				'step'          => '2', 
+				'min'           => array( 8,   __('Min', 'dilaz-metabox') ),
+				'max'           => array( 100, __('Max', 'dilaz-metabox') ),
+				'step'          => '2',
 				'prefix'        => '',
 				'suffix'        => '%',
 				'post_format'   => array('standard', 'gallery', 'quote'),
@@ -62,7 +62,7 @@ $dilaz_meta_boxes[] = array(
 			'desc'    => __('Enable/disable switch option.', 'dilaz-metabox'),
 			'type'    => 'switch',
 			'options' => array(
-				'enable'  => __('Enable', 'dilaz-metabox'), 
+				'enable'  => __('Enable', 'dilaz-metabox'),
 				'disable' => __('Disable', 'dilaz-metabox'),
 			),
 			'std'  => 'disable',
@@ -78,7 +78,7 @@ $dilaz_meta_boxes[] = array(
 			'desc'    => __('On/Off switch option.', 'dilaz-metabox'),
 			'type'    => 'switch',
 			'options' => array(
-				1 => __('On', 'dilaz-metabox'), 
+				1 => __('On', 'dilaz-metabox'),
 				0 => __('Off', 'dilaz-metabox'),
 			),
 			'std'   => 0,
@@ -90,7 +90,7 @@ $dilaz_meta_boxes[] = array(
 			'desc'    => __('Set multiple options using buttonset.', 'dilaz-metabox'),
 			'type'    => 'buttonset',
 			'options' => array(
-				'yes'   => __('Yes', 'dilaz-metabox'), 
+				'yes'   => __('Yes', 'dilaz-metabox'),
 				'no'    => __('No', 'dilaz-metabox'),
 				'maybe' => __('Maybe', 'dilaz-metabox')
 			),
@@ -103,9 +103,9 @@ $dilaz_meta_boxes[] = array(
 			'desc' => __('Select value from range slider.', 'dilaz-metabox'),
 			'type' => 'slider',
 			'args' => array(
-				'min'    => '8', 
-				'max'    => '100', 
-				'step'   => '2', 
+				'min'    => '8',
+				'max'    => '100',
+				'step'   => '2',
 				'suffix' => '%'
 			),
 			'std'   => '40',
@@ -211,10 +211,10 @@ $dilaz_meta_boxes[] = array(
 			'desc'  => __('Description 1.', 'dilaz-metabox'),
 			'desc2' => __('Description 2.', 'dilaz-metabox'),
 			'type'  => 'paragraph',
-			'value' => 'Your privacy is important to us. We at CompanyNAME, have created this privacy policy to demonstrate our firm commitment to protecting your personal information and informing you about how we handle it. 
-			
-			This privacy policy only applies to transactions and activities in which you engage, and data gathered, on the CompanyNAME Website. Please review this privacy policy periodically as we may modify it from time to time. 
-			
+			'value' => 'Your privacy is important to us. We at CompanyNAME, have created this privacy policy to demonstrate our firm commitment to protecting your personal information and informing you about how we handle it.
+
+			This privacy policy only applies to transactions and activities in which you engage, and data gathered, on the CompanyNAME Website. Please review this privacy policy periodically as we may modify it from time to time.
+
 			Each time you visit the Site or provide us with information, by doing so you are accepting the practices described in this privacy policy at that time.',
 		);
 		$dilaz_meta_boxes[] = array(
@@ -291,7 +291,7 @@ $dilaz_meta_boxes[] = array(
 			),
 			'args' => array(),
 		);
-	
+
 	# TAB - Repeatable Options Set
 	# *****************************************************************************************
 	$dilaz_meta_boxes[] = array(
@@ -313,10 +313,10 @@ $dilaz_meta_boxes[] = array(
 			),
 			'options' => array(
 				array(
-					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+					array('label' => '', 'value' => 'Row 1 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 2 - Value 2'), 
+					array('label' => '', 'value' => 'Row 2 - Value 2'),
 				)
 			),
 		);
@@ -333,16 +333,16 @@ $dilaz_meta_boxes[] = array(
 			),
 			'options' => array(
 				array(
-					array('label' => 'Label One', 'value' => 'Row 1 - Value 1', 'size' => 15), 
-					array('label' => 'Label Two', 'value' => 'Row 1 - Value 2', 'size' => 15), 
-					array('label' => 'Label Three', 'value' => 'Row 1 - Value 3', 'size' => 15), 
-					array('label' => 'Label Four', 'value' => 'Row 1 - Value 4', 'size' => 15), 
+					array('label' => 'Label One', 'value' => 'Row 1 - Value 1', 'size' => 15),
+					array('label' => 'Label Two', 'value' => 'Row 1 - Value 2', 'size' => 15),
+					array('label' => 'Label Three', 'value' => 'Row 1 - Value 3', 'size' => 15),
+					array('label' => 'Label Four', 'value' => 'Row 1 - Value 4', 'size' => 15),
 				),
 				array(
-					array('label' => 'Label One', 'value' => 'Row 2 - Value 1', 'size' => 15), 
-					array('label' => 'Label Two', 'value' => 'Row 2 - Value 2', 'size' => 15), 
-					array('label' => 'Label Three', 'value' => 'Row 2 - Value 3', 'size' => 15), 
-					array('label' => 'Label Four', 'value' => 'Row 2 - Value 4', 'size' => 15), 
+					array('label' => 'Label One', 'value' => 'Row 2 - Value 1', 'size' => 15),
+					array('label' => 'Label Two', 'value' => 'Row 2 - Value 2', 'size' => 15),
+					array('label' => 'Label Three', 'value' => 'Row 2 - Value 3', 'size' => 15),
+					array('label' => 'Label Four', 'value' => 'Row 2 - Value 4', 'size' => 15),
 				)
 			),
 		);
@@ -358,13 +358,13 @@ $dilaz_meta_boxes[] = array(
 			),
 			'options' => array(
 				array(
-					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+					array('label' => '', 'value' => 'Row 1 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+					array('label' => '', 'value' => 'Row 2 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+					array('label' => '', 'value' => 'Row 3 - Value 1'),
 				)
 			),
 		);
@@ -380,13 +380,13 @@ $dilaz_meta_boxes[] = array(
 			),
 			'options' => array(
 				array(
-					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+					array('label' => '', 'value' => 'Row 1 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+					array('label' => '', 'value' => 'Row 2 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+					array('label' => '', 'value' => 'Row 3 - Value 1'),
 				)
 			),
 		);
@@ -402,13 +402,13 @@ $dilaz_meta_boxes[] = array(
 			),
 			'options' => array(
 				array(
-					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+					array('label' => '', 'value' => 'Row 1 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+					array('label' => '', 'value' => 'Row 2 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+					array('label' => '', 'value' => 'Row 3 - Value 1'),
 				)
 			),
 		);
@@ -423,13 +423,13 @@ $dilaz_meta_boxes[] = array(
 			),
 			'options' => array(
 				array(
-					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+					array('label' => '', 'value' => 'Row 1 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+					array('label' => '', 'value' => 'Row 2 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+					array('label' => '', 'value' => 'Row 3 - Value 1'),
 				)
 			),
 		);
@@ -444,17 +444,17 @@ $dilaz_meta_boxes[] = array(
 			),
 			'options' => array(
 				array(
-					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+					array('label' => '', 'value' => 'Row 1 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+					array('label' => '', 'value' => 'Row 2 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+					array('label' => '', 'value' => 'Row 3 - Value 1'),
 				)
 			),
 		);
-	
+
 	# TAB - Media Options Set
 	# *****************************************************************************************
 	$dilaz_meta_boxes[] = array(
@@ -463,7 +463,7 @@ $dilaz_meta_boxes[] = array(
 		'icon'  => 'mdi-monitor',
 		'type'  => 'metabox_tab'
 	);
-		
+
 		# FIELDS - Media Fields
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$dilaz_meta_boxes[] = array(
@@ -473,20 +473,20 @@ $dilaz_meta_boxes[] = array(
 			'type' => 'upload',
 			'std'  => '',
 			'args' => array(
-				'file_type' => 'image', 
+				'file_type' => 'image',
 				'multiple'  => true,
-				// 'file_specific' => true, 
+				// 'file_specific' => true,
 			),
 		);
-		$dilaz_meta_boxes[] = array( 
+		$dilaz_meta_boxes[] = array(
 			'id'   => $prefix .'image_file',
 			'name' => __('Image File:', 'dilaz-metabox'),
 			'desc' => __('Select/Upload single image file from media library.', 'dilaz-metabox'),
 			'type' => 'upload',
 			'std'  => '',
 			'args' => array(
-				'file_type' => 'image', 
-				'show_thumb' => false, 
+				'file_type' => 'image',
+				'show_thumb' => true,
 				// 'file_specific' => true
 			),
 		);
@@ -497,7 +497,7 @@ $dilaz_meta_boxes[] = array(
 			'type' => 'upload',
 			'std'  => '',
 			'args' => array(
-				'file_type' => 'audio',  
+				'file_type' => 'audio',
 				'multiple'  => true,
 				// 'file_specific' => true,
 			),
@@ -509,7 +509,7 @@ $dilaz_meta_boxes[] = array(
 			'type' => 'upload',
 			'std'  => '',
 			'args' => array(
-				'file_type' => 'audio', 
+				'file_type' => 'audio',
 				// 'file_specific' => true
 			),
 		);
@@ -521,7 +521,7 @@ $dilaz_meta_boxes[] = array(
 			'std'  => '',
 			'args' => array(
 				'file_type' => 'video',
-				'multiple'  => true, 
+				'multiple'  => true,
 				// 'file_specific' => true
 			),
 		);
@@ -532,11 +532,11 @@ $dilaz_meta_boxes[] = array(
 			'type' => 'upload',
 			'std'  => '',
 			'args' => array(
-				'file_type' => 'video', 
+				'file_type' => 'video',
 				// 'file_specific' => true
 			),
 		);
-	
+
 	# TAB - Date Options Set
 	# *****************************************************************************************
 	$dilaz_meta_boxes[] = array(
@@ -545,7 +545,7 @@ $dilaz_meta_boxes[] = array(
 		'icon'  => 'mdi-calendar',
 		'type'  => 'metabox_tab'
 	);
-		
+
 		# FIELDS - Date Fields
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$dilaz_meta_boxes[] = array(
@@ -565,7 +565,7 @@ $dilaz_meta_boxes[] = array(
 					'format'    => 'l, d F Y h:i:s A',
 					'date_time' => '',
 					'prefix'    => __('To:', 'dilaz-metabox'),
-				),					
+				),
 			),
 		);
 		$dilaz_meta_boxes[] = array(
@@ -575,7 +575,7 @@ $dilaz_meta_boxes[] = array(
 			'type' => 'date_time',
 			'std'  => '',
 			'args' => array(
-				'format' => 'l, d F Y h:i:s A', 
+				'format' => 'l, d F Y h:i:s A',
 				'size'   => '50'
 			),
 		);
@@ -596,7 +596,7 @@ $dilaz_meta_boxes[] = array(
 					'format' => 'h:i:s A',
 					'time'   => '',
 					'prefix' => __('To:', 'dilaz-metabox'),
-				),					
+				),
 			),
 		);
 		$dilaz_meta_boxes[] = array(
@@ -606,7 +606,7 @@ $dilaz_meta_boxes[] = array(
 			'type' => 'time',
 			'std'  => '07:00',
 			'args' => array(
-				'format' => 'h:i:s A', 
+				'format' => 'h:i:s A',
 				'size'   => '20'
 			),
 		);
@@ -627,7 +627,7 @@ $dilaz_meta_boxes[] = array(
 					'format' => 'F, Y',
 					'month'  => '',
 					'prefix' => __('To:', 'dilaz-metabox'),
-				),					
+				),
 			),
 		);
 		$dilaz_meta_boxes[] = array(
@@ -637,7 +637,7 @@ $dilaz_meta_boxes[] = array(
 			'type' => 'month',
 			'std'  => '',
 			'args' => array(
-				'format' => 'F, Y', 
+				'format' => 'F, Y',
 				'size'   => '20'
 			),
 		);
@@ -658,7 +658,7 @@ $dilaz_meta_boxes[] = array(
 					'format' => 'l, d F, Y',
 					'date'   => '',
 					'prefix' => __('To:', 'dilaz-metabox'),
-				),					
+				),
 			),
 		);
 		$dilaz_meta_boxes[] = array(
@@ -668,11 +668,11 @@ $dilaz_meta_boxes[] = array(
 			'type' => 'date',
 			'std'  => '',
 			'args' => array(
-				'format' => 'l, d F, Y', 
+				'format' => 'l, d F, Y',
 				'size'   => '20'
 			),
 		);
-	
+
 	# TAB - Font Options Set
 	# *****************************************************************************************
 	$dilaz_meta_boxes[] = array(
@@ -681,7 +681,7 @@ $dilaz_meta_boxes[] = array(
 		'icon'  => 'mdi-format-font',
 		'type'  => 'metabox_tab'
 	);
-		
+
 		# FIELDS - Font Fields
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$dilaz_meta_boxes[] = array(
@@ -689,23 +689,23 @@ $dilaz_meta_boxes[] = array(
 			'name'	  => __('Font:', 'dilaz-metabox'),
 			'desc'	  => __('Typography style with many option properties.', 'dilaz-metabox'),
 			'type'	  => 'font',
-			'options' => array( 
+			'options' => array(
 				'family' => true,
-				'backup' => true, 
+				'backup' => true,
 				'subset' => true,
 				'weight' => true,
-				'size'   => true, 
-				'height' => true, 
-				'style'  => true, 
-				'case'   => true, 
+				'size'   => true,
+				'height' => true,
+				'style'  => true,
+				'case'   => true,
 				'color'  => true
 			),
 			'std' => array(
-				'family' => 'Trebuchet', 
-				'backup' => false, 
-				'subset' => false, 
+				'family' => 'Trebuchet',
+				'backup' => false,
+				'subset' => false,
 				'weight' => false,
-				'size'   => '18', 
+				'size'   => '18',
 				'height' => false,
 				'style'  => false,
 				'case'   => false,
@@ -718,19 +718,19 @@ $dilaz_meta_boxes[] = array(
 			'name'	  => __('Font:', 'dilaz-metabox'),
 			'desc'	  => __('Typography style with few option properties.', 'dilaz-metabox'),
 			'type'    => 'font',
-			'options' => array( 
-				'family' => true, 
-				'backup' => true, 
-				'subset' => false, 
-				'weight' => true, 
-				'size'   => true, 
-				'height' => true, 
-				'style'  => true, 
-				'case'   => true, 
-				'color'  => true, 
+			'options' => array(
+				'family' => true,
+				'backup' => true,
+				'subset' => false,
+				'weight' => true,
+				'size'   => true,
+				'height' => true,
+				'style'  => true,
+				'case'   => true,
+				'color'  => true,
 			),
 			'std' => array(
-				'family' => 'Trebuchet', 
+				'family' => 'Trebuchet',
 				'backup' => false,
 				'subset' => false,
 				'weight' => false,
@@ -742,7 +742,7 @@ $dilaz_meta_boxes[] = array(
 			),
 			'class' => ''
 		);
-	
+
 	# TAB - Color Options Set
 	# *****************************************************************************************
 	$dilaz_meta_boxes[] = array(
@@ -751,7 +751,7 @@ $dilaz_meta_boxes[] = array(
 		'icon'  => 'mdi-format-color-fill',
 		'type'  => 'metabox_tab'
 	);
-		
+
 		# FIELDS - Color Fields
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$dilaz_meta_boxes[] = array(
@@ -776,7 +776,7 @@ $dilaz_meta_boxes[] = array(
 			'type'	=> 'color',
 			'std'   => '#222222',
 		);
-	
+
 	# TAB - Choice Options Set
 	# *****************************************************************************************
 	$dilaz_meta_boxes[] = array(
@@ -785,7 +785,7 @@ $dilaz_meta_boxes[] = array(
 		'icon'  => 'mdi-tune',
 		'type'  => 'metabox_tab'
 	);
-	
+
 		# FIELDS - Choice Fields
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$dilaz_meta_boxes[] = array(
@@ -1033,7 +1033,7 @@ $dilaz_meta_boxes[] = array(
 			'std'  => 'two',
 			'args' => array('inline' => true),
 		);
-	
+
 	# TAB - Editor Options Set
 	# *****************************************************************************************
 	$dilaz_meta_boxes[] = array(
@@ -1042,7 +1042,7 @@ $dilaz_meta_boxes[] = array(
 		'icon'  => 'mdi-square-edit-outline',
 		'type'  => 'metabox_tab'
 	);
-		
+
 		# FIELDS - Editor Fields
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$dilaz_meta_boxes[] = array(
@@ -1058,8 +1058,8 @@ $dilaz_meta_boxes[] = array(
 			'type' => 'editor',
 			'args' => array('rows' => '55'),
 		);
-		
-		
+
+
 	# TAB - Conditionals Options Set
 	# *****************************************************************************************
 	$dilaz_meta_boxes[] = array(
@@ -1068,7 +1068,7 @@ $dilaz_meta_boxes[] = array(
 		'icon'  => 'mdi-toggle-switch',
 		'type'  => 'metabox_tab'
 	);
-		
+
 		# FIELDS - Conditional Fields
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$dilaz_meta_boxes[] = array(
@@ -1195,8 +1195,8 @@ $dilaz_meta_boxes[] = array(
 			'req_cond'   => 'AND',
 			'req_action' => 'show',
 		);
-		
-		
+
+
 # BOX - Test Beta
 # =============================================================================================
 $dilaz_meta_boxes[] = array(
@@ -1216,7 +1216,7 @@ $dilaz_meta_boxes[] = array(
 		'icon'  => 'mdi-anchor',
 		'type'  => 'metabox_tab'
 	);
-		
+
 		# FIELDS - Beta Tab 1
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$dilaz_meta_boxes[] = array(
@@ -1234,9 +1234,9 @@ $dilaz_meta_boxes[] = array(
 			),
 			'std' => 'default'
 		);
-		
-		
-		
-		
-		
+
+
+
+
+
 return $dilaz_meta_boxes;

@@ -13,9 +13,9 @@
 || @link        https://github.com/Rodgath/Dilaz-Metabox
 || @License     GPL-2.0+
 || @License URI http://www.gnu.org/licenses/gpl-2.0.txt
-|| 
-|| NOTE: This metabox options panel requires "Dilaz-Metabox" to be installed. 
-|| 
+||
+|| NOTE: This metabox options panel requires "Dilaz-Metabox" to be installed.
+||
 */
 
 defined('ABSPATH') || exit;

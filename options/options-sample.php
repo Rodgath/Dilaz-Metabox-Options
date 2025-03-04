@@ -11,13 +11,13 @@
 || @copyright  Copyright (C) 2017, Rodgath LTD
 || @link       https://github.com/Rodgath/Dilaz-Metabox
 || @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-|| 
+||
 || NOTE 1: Rename this file from "options-sample.php" to "options.php". If you
 ||         don't rename it, all your options and settings will be overwritten
 ||         when updating Dilaz Metabox Options.
-|| 
+||
 || NOTE 2: Add all your theme/plugin metabox options in this file
-|| 
+||
 */
 
 defined('ABSPATH') || exit;
@@ -34,7 +34,7 @@ $dilaz_meta_boxes[] = array(
 	'priority' => 'high',
 	'type'     => 'metabox_set'
 );
-	
+
 	# TAB - Sample 1 Tab 1
 	# *****************************************************************************************
 	$dilaz_meta_boxes[] = array(
@@ -43,7 +43,7 @@ $dilaz_meta_boxes[] = array(
 		'icon'  => 'fa-bank',
 		'type'  => 'metabox_tab'
 	);
-		
+
 		# FIELDS - Sample 1 Tab 1
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$dilaz_meta_boxes[] = array(
@@ -54,8 +54,8 @@ $dilaz_meta_boxes[] = array(
 			'options' => DilazMetaboxFunction\DilazMetaboxFunction::choice('yes_no'),
 			'std'     => 'no'
 		);
-		
-		
+
+
 	# TAB - Sample 1 Tab 2
 	# *****************************************************************************************
 	$dilaz_meta_boxes[] = array(
@@ -64,7 +64,7 @@ $dilaz_meta_boxes[] = array(
 		'icon'  => 'fa-automobile',
 		'type'  => 'metabox_tab'
 	);
-		
+
 		# FIELDS - Sample 1 Tab 2
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$dilaz_meta_boxes[] = array(
@@ -75,10 +75,10 @@ $dilaz_meta_boxes[] = array(
 			'options' => DilazMetaboxFunction\DilazMetaboxFunction::choice('yes_no'),
 			'std'     => 'no'
 		);
-		
-		
-		
-		
+
+
+
+
 # BOX - Sample Set 2
 # =============================================================================================
 $dilaz_meta_boxes[] = array(
@@ -89,7 +89,7 @@ $dilaz_meta_boxes[] = array(
 	'priority' => 'high',
 	'type'     => 'metabox_set'
 );
-	
+
 	# TAB - Sample 2 Tab 1
 	# *****************************************************************************************
 	$dilaz_meta_boxes[] = array(
@@ -98,7 +98,7 @@ $dilaz_meta_boxes[] = array(
 		'icon'  => 'fa-bank',
 		'type'  => 'metabox_tab'
 	);
-		
+
 		# FIELDS - Sample 2 Tab 1
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$dilaz_meta_boxes[] = array(
@@ -109,7 +109,7 @@ $dilaz_meta_boxes[] = array(
 			'options' => DilazMetaboxFunction\DilazMetaboxFunction::choice('yes_no'),
 			'std'     => 'no'
 		);
-		
-		
-		
+
+
+
 return $dilaz_meta_boxes;
