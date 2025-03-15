@@ -1197,6 +1197,96 @@ $dilaz_meta_boxes[] = array(
 		);
 
 
+	# TAB - Grouped Options Set
+	# *****************************************************************************************
+	$dilaz_meta_boxes[] = array(
+		'id'    => $prefix .'option_group',
+		'title' => __('Grouped Options', 'dilaz-metabox'),
+		'icon'  => 'mdi-format-list-group',
+		'type'  => 'metabox_tab'
+	);
+
+		# FIELDS - Grouped Fields
+		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		$dilaz_meta_boxes[] = array(
+			'id'   => $prefix .'group_1',
+			'name' => __('Group One', 'dilaz-metabox'),
+			'type' => 'option_group',
+			'group_options' => [
+        array(
+          'id'      => $prefix .'switch_in_group',
+          'name'    => __('Switch', 'dilaz-metabox'),
+          'desc'    => __('On/Off switch option.', 'dilaz-metabox'),
+          'type'    => 'switch',
+          'options' => array(
+            1 => __('On', 'dilaz-metabox'),
+            0 => __('Off', 'dilaz-metabox'),
+          ),
+          'std'   => 0,
+          'class' => ''
+        ),
+        array(
+          'id'     => $prefix .'text_in_group',
+          'name'   => __('Text:', 'dilaz-metabox'),
+          'desc'   => __('Description 1.', 'dilaz-metabox'),
+          'type'   => 'text',
+          'std'    => '',
+        )
+      ],
+			'std' => array('min_std' => 20, 'max_std' => 45),
+		);
+
+		# FIELDS - Grouped Fields
+		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		$dilaz_meta_boxes[] = array(
+			'id'   => $prefix .'group_2',
+			'name' => __('Group Two', 'dilaz-metabox'),
+			'type' => 'option_group',
+			'group_options' => [
+        array(
+          'id'     => $prefix .'stepper_in_group',
+          'name'   => __('Numeric Stepper:', 'dilaz-metabox'),
+          'desc'   => __('Description 1.', 'dilaz-metabox'),
+          'type'   => 'stepper',
+          'std'    => '2',
+          'args'   => array('wheel_step' => '1', 'arrow_step' => '1', 'step_limit' => '1,10'),
+        ),
+        array(
+          'id'      => $prefix .'buttonset_in_group',
+          'name'    => __('Button Set', 'dilaz-metabox'),
+          'desc'    => __('Set multiple options using buttonset.', 'dilaz-metabox'),
+          'type'    => 'buttonset',
+          'options' => array(
+            'yes'   => __('Yes', 'dilaz-metabox'),
+            'no'    => __('No', 'dilaz-metabox'),
+            'maybe' => __('Maybe', 'dilaz-metabox')
+          ),
+          'std'   => 'no',
+          'class' => ''
+        )
+      ],
+			'std' => array('min_std' => 20, 'max_std' => 45),
+		);
+
+		# FIELDS - Grouped Fields
+		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		$dilaz_meta_boxes[] = array(
+			'id'   => $prefix .'group_3',
+			'name' => __('Group Three', 'dilaz-metabox'),
+			'type' => 'option_group',
+			'group_options' => [
+        array(
+          'id'     => $prefix .'textarea_2',
+          'name'   => __('Textarea:', 'dilaz-metabox'),
+          'desc'   => __('Description 1.', 'dilaz-metabox'),
+          'type'   => 'textarea',
+          'std'    => 'Sample content...',
+        )
+      ],
+			'std' => array('min_std' => 20, 'max_std' => 45),
+		);
+
+
 # BOX - Test Beta
 # =============================================================================================
 $dilaz_meta_boxes[] = array(
