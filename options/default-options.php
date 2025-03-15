@@ -34,7 +34,7 @@ $dilaz_meta_boxes[] = array(
 	$dilaz_meta_boxes[] = array(
 		'id'    => $prefix .'simple_options',
 		'title' => __('Simple Options', 'dilaz-metabox'),
-		'icon'  => 'mdi-settings',
+		'icon'  => 'mdi-cog',
 		'type'  => 'metabox_tab'
 	);
 
