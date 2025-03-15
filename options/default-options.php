@@ -1232,8 +1232,7 @@ $dilaz_meta_boxes[] = array(
           'type'   => 'text',
           'std'    => '',
         )
-      ],
-			'std' => array('min_std' => 20, 'max_std' => 45),
+      ]
 		);
 
 		# FIELDS - Grouped Fields
@@ -1264,8 +1263,7 @@ $dilaz_meta_boxes[] = array(
           'std'   => 'no',
           'class' => ''
         )
-      ],
-			'std' => array('min_std' => 20, 'max_std' => 45),
+      ]
 		);
 
 		# FIELDS - Grouped Fields
@@ -1282,8 +1280,7 @@ $dilaz_meta_boxes[] = array(
           'type'   => 'textarea',
           'std'    => 'Sample content...',
         )
-      ],
-			'std' => array('min_std' => 20, 'max_std' => 45),
+      ]
 		);
 
 
