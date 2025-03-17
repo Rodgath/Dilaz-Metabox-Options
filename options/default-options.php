@@ -41,6 +41,12 @@ $dilaz_meta_boxes[] = array(
 		# FIELDS - Simple Fields
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$dilaz_meta_boxes[] = array(
+			'id'   => $prefix .'info',
+			'name' => __('Info Box Title', 'dilaz-metabox'),
+			'desc' => __('Sample info description goes here.', 'dilaz-metabox'),
+			'type' => 'info',
+		);
+		$dilaz_meta_boxes[] = array(
 			'id'   => $prefix .'range',
 			'name' => __('Range:', 'dilaz-metabox'),
 			'desc' => __('Set range between two minimum and maximum values.', 'dilaz-metabox'),
