@@ -1218,6 +1218,7 @@ $dilaz_meta_boxes[] = array(
 			'id'   => $prefix .'group_1',
 			'name' => __('Group One', 'dilaz-metabox'),
 			'type' => 'option_group',
+			'is_open' => false, // Whether this option group tab is open or closed
 			'group_options' => [
         array(
           'id'      => $prefix .'switch_in_group',
@@ -1247,6 +1248,7 @@ $dilaz_meta_boxes[] = array(
 			'id'   => $prefix .'group_2',
 			'name' => __('Group Two', 'dilaz-metabox'),
 			'type' => 'option_group',
+			'is_open' => false, // Whether this option group tab is open or closed
 			'group_options' => [
         array(
           'id'     => $prefix .'stepper_in_group',
@@ -1278,6 +1280,7 @@ $dilaz_meta_boxes[] = array(
 			'id'   => $prefix .'group_3',
 			'name' => __('Group Three', 'dilaz-metabox'),
 			'type' => 'option_group',
+			'is_open' => false, // Whether this option group tab is open or closed
 			'group_options' => [
         array(
           'id'     => $prefix .'textarea_2',
