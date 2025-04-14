@@ -481,6 +481,7 @@ $dilaz_meta_boxes[] = array(
 			'args' => array(
 				'file_type' => 'image',
 				'multiple'  => true,
+				'object_fit'  => 'contain',
 				// 'file_specific' => true,
 			),
 		);
