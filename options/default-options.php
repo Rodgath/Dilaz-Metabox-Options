@@ -26,7 +26,10 @@ $dilaz_meta_boxes[] = array(
 	'pages'    => array('post', 'page'),
 	'context'  => 'normal',
 	'priority' => 'high',
-	'type'     => 'metabox_set'
+	'type'     => 'metabox_set',
+  // 'args'  => array(
+  //   'page_template' => array('privacy-policy', 'sample-page', 'contact', 'about'), // Page template example
+  // ),
 );
 
 	# TAB - Simple Options Set
@@ -35,7 +38,10 @@ $dilaz_meta_boxes[] = array(
 		'id'    => $prefix .'simple_options',
 		'title' => __('Simple Options', 'dilaz-metabox'),
 		'icon'  => 'mdi-cog',
-		'type'  => 'metabox_tab'
+		'type'  => 'metabox_tab',
+    // 'args'  => array(
+    //   'page_template' => array('contact', 'about'), // Page template example
+    // ),
 	);
 
 		# FIELDS - Simple Fields
@@ -58,7 +64,7 @@ $dilaz_meta_boxes[] = array(
 				'prefix'        => '',
 				'suffix'        => '%',
 				'post_format'   => array('standard', 'gallery', 'quote'),
-				'page_template' => array('custom', 'custom_2')
+				'page_template' => array('custom', 'custom_2') // Page template example
 			),
 			'std' => array('min_std' => 20, 'max_std' => 45),
 		);
@@ -74,7 +80,7 @@ $dilaz_meta_boxes[] = array(
 			'std'  => 'disable',
 			'args' => array(
 				'post_format'   => array('standard', 'video', 'chat'),
-				'page_template' => array('custom_2')
+				'page_template' => array('custom_2') // Page template example
 			),
 			'class' => ''
 		);
